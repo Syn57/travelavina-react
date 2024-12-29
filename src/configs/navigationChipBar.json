@@ -1,0 +1,75 @@
+[
+    {
+        "title": "HOME",
+        "route": "/",
+        "data": []
+    },
+    {
+        "title": "ABOUT",
+        "route": "/about",
+        "data": []
+    },
+    {
+        "title": "PREMIUM TRIP",
+        "route": "/detail/premium",
+        "data": [
+            {
+                "contentType" : "banner",
+                "contentData" : {
+                    "imageUrl" : "imageurl",
+                    "route" : "/route"
+                }
+            },
+            {
+                "contentType" : "schedule",
+                "contentData" : {
+                    "schedules" : "TBD",
+                    "route" : "/route"
+                }
+            }
+        ]
+    },
+    {
+        "title": "SURVIVAL TRIP",
+        "route": "/detail/survival",
+        "data": [
+            {
+                "contentType" : "text",
+                "contentData" : {
+                    "title" : "title text",
+                    "route" : "/route"
+                }
+            }
+        ]
+    },
+    {
+        "title": "COMPANY OUTING",
+        "route": "/detail/company",
+        "data": []
+    },
+    {
+        "title": "STUDY TOUR",
+        "route": "/detail/study",
+        "data": []
+    },
+    {
+        "title": "OPEN TRIP",
+        "route": "/detail/open",
+        "data": []
+    },
+    {
+        "title": "MICE",
+        "route": "/detail/mice",
+        "data": []
+    },
+    {
+        "title": "TICKETS",
+        "route": "/detail/ticket",
+        "data": []
+    },
+    {
+        "title": "UMROH & HAJI",
+        "route": "/detail/umroh",
+        "data": []
+    }
+]

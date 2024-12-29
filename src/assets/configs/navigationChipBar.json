@@ -1,0 +1,75 @@
+[
+    {
+        "title": "Home",
+        "route": "/",
+        "data": []
+    },
+    {
+        "title": "About Us",
+        "route": "/about",
+        "data": []
+    },
+    {
+        "title": "Premium Trip",
+        "route": "/detail/premium",
+        "data": [
+            {
+                "contentType" : "banner",
+                "contentData" : {
+                    "imageUrl" : "imageurl",
+                    "route" : "/route"
+                }
+            },
+            {
+                "contentType" : "schedule",
+                "contentData" : {
+                    "schedules" : "TBD",
+                    "route" : "/route"
+                }
+            }
+        ]
+    },
+    {
+        "title": "Survival Trip",
+        "route": "/detail/survival",
+        "data": [
+            {
+                "contentType" : "text",
+                "contentData" : {
+                    "title" : "title text",
+                    "route" : "/route"
+                }
+            }
+        ]
+    },
+    {
+        "title": "Company Outing",
+        "route": "/detail/company",
+        "data": []
+    },
+    {
+        "title": "Study Tour",
+        "route": "/detail/study",
+        "data": []
+    },
+    {
+        "title": "Open Trip",
+        "route": "/detail/open",
+        "data": []
+    },
+    {
+        "title": "Mice",
+        "route": "/detail/mice",
+        "data": []
+    },
+    {
+        "title": "Tickets",
+        "route": "/detail/ticket",
+        "data": []
+    },
+    {
+        "title": "Umroh & Haji Plus",
+        "route": "/detail/umroh",
+        "data": []
+    }
+]
