@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    caret-color: transparent;
+}
+
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('assets/fonts/alfa_slab_one_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url('assets/fonts/alata_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alata';
+    src: url('assets/fonts/alice_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url('assets/fonts/archivo_black_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('assets/fonts/alike_regular.ttf') format('truetype');
+    font-family: "Alike";
+    font-weight: 400;
+    font-style: normal;
+}

@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        alfaslab: ['"Alfa Slab One"', 'serif'],
+        alata: ['"Alata"', 'serif'],
+        alice: ['"Alice"', 'serif'],
+        archivo: ['"Archivo"', 'serif'],
+        alike: ['"Alike"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }

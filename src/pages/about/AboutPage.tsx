@@ -1,8 +1,12 @@
 import React from "react";
+import NavigationBar from "../../component/sections/NavigationBar";
 
 const AboutPage = () => {
     return (
-        <p>This is About Page</p>
+        <div className="relative">
+            <NavigationBar />
+            <p>This is About Page</p>
+        </div>
     );
 };
 

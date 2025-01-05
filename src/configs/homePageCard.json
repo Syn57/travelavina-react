@@ -1,0 +1,32 @@
+[
+    {
+        "order": 1,
+        "rating": 4.8,
+        "destinationTitle": "New Zealand",
+        "image": "src/assets/images/slider-banner-3.jpg"
+    },
+    {
+        "order": 2,
+        "rating": 4.0,
+        "destinationTitle": "Australia",
+        "image": "src/assets/images/slider-banner-3.jpg"
+    },
+    {
+        "order": 3,
+        "rating": 4.0,
+        "destinationTitle": "England",
+        "image": "src/assets/images/slider-banner-3.jpg"
+    },
+    {
+        "order": 4,
+        "rating": 4.5,
+        "destinationTitle": "Mexico",
+        "image": "src/assets/images/slider-banner-3.jpg"
+    },
+    {
+        "order": 5,
+        "rating": 5.0,
+        "destinationTitle": "Italy",
+        "image": "src/assets/images/slider-banner-3.jpg"
+    }
+]

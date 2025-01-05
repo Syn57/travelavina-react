@@ -3,21 +3,16 @@
 		"image": "src/assets/images/slider-banner-1.jpg",
 		"route": "https://wa.me/628159347322",
 		"btnText": "Chat me!",
-		"bannerTitle": "Premium trip",
+		"bannerTitle": "PREMIUM TRIP",
+		"bannerSubtitle": "Menikmati dunia dengan keanggunan dan kemewahan sejati ",
 		"order": 1
 	},
 	{
 		"image": "src/assets/images/slider-banner-2.jpg",
 		"route": "https://wa.me/628159347322",
 		"btnText": "Chat me!",
-		"bannerTitle": "Survival trip",
+		"bannerTitle": "SURVIVAL TRIP",
+		"bannerSubtitle": "Menikmati dunia dengan keanggunan dan kemewahan sejati ",
 		"order": 2
-	},
-	{
-		"image": "src/assets/images/slider-banner-3.jpg",
-		"route": "https://wa.me/628159347322",
-		"btnText": "Chat me!",
-		"bannerTitle": "Umroh Haji trip",
-		"order": 3
 	}
 ]

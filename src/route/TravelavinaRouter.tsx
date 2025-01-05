@@ -4,12 +4,13 @@ import HomePage from '../pages/home/HomePage';
 import DetailPage from '../pages/detail/DetailPage';
 import AboutPage from '../pages/about/AboutPage';
 import NotFoundPage from '../pages/notfound/NotFoundPages';
+import Header from '../component/sections/Header';
 
 
 const TravelavinaRouter = () => {
     return (
         <Router>
-            <NavigationBar />
+            <Header className='z-20'/>  
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
