@@ -1,11 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import NavigationBar from '../component/sections/NavigationBar';
+import Header from '../sections/Header';
 import HomePage from '../pages/home/HomePage';
-import DetailPage from '../pages/detail/DetailPage';
 import AboutPage from '../pages/about/AboutPage';
+import DetailPage from '../pages/detail/DetailPage';
 import NotFoundPage from '../pages/notfound/NotFoundPages';
-import Header from '../component/sections/Header';
-
 
 const TravelavinaRouter = () => {
     return (

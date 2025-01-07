@@ -1,5 +1,4 @@
-import React from "react";
-import logo from '../assets/images/logo_travelavina.png'; 
+import logo from '../../assets/images/logo_travelavina.png'; 
 
 const NavLogo = ({ className = "" }) => {
     console.log(logo)

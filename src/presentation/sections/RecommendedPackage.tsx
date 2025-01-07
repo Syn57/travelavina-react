@@ -1,5 +1,5 @@
 import packages from "../../configs/homeRecommendationPackage.json"
-import RecommendedPackageItem from "../RecommendedPackageItem";
+import RecommendedPackageItem from "../component/RecommendedPackageItem";
 
 const RecommendedPackage = () => {
     return (

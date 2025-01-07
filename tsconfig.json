@@ -3,5 +3,14 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext",
+      "moduleResolution": "node",
+      "lib": ["dom", "esnext"],
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true
+    }
 }

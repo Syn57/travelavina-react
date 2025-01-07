@@ -1,4 +1,4 @@
-import ic_arrow_right from "../assets/icons/ic_arrow_right.svg"
+import ic_arrow_right from "../../assets/icons/ic_arrow_right.svg"
 
 interface IBanner {
     image: string;

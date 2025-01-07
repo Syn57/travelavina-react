@@ -1,7 +1,7 @@
 import { Rating } from "@mui/material";
-import ic_arrow_right from "../assets/icons/ic_arrow_right.svg"
-import { BOOKING_NOW_TEXT } from "../utils/WcmsConstants";
-import { getWcmsValue } from "../utils/WcmsHelper";
+import ic_arrow_right from "../../assets/icons/ic_arrow_right.svg"
+import { BOOKING_NOW_TEXT } from "../../utils/WcmsConstants";
+import { getWcmsValue } from "../../utils/WcmsHelper";
 
 interface IHomepageCard {
     image: string;

@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef, MutableRefObject } from "react";
-import banners from "../configs/homeSliderBanner.json"; 
+import banners from "../../configs/homeSliderBanner.json"; 
 import { Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css'; 
 import 'swiper/bundle';
 import BannerSilderItem from "./BannerSliderItem";
-import ic_left from "../assets/images/chevron-left.svg"
-import ic_right from "../assets/images/chevron-right.svg"
-import ic_customer from "../assets/icons/ic_customer.svg"
-import ic_plane from "../assets/icons/ic_plane.svg"
-import ic_city from "../assets/icons/ic_city.svg"
-import ic_accomodation from "../assets/icons/ic_accomodation.svg"
-import { getWcmsValue } from "../utils/WcmsHelper";
-import { TOTAL_ACCOMODATION_TEXT, TOTAL_CITY_TEXT, TOTAL_CUSTOMER_TEXT, TOTAL_TOUR_TEXT } from "../utils/WcmsConstants";
+import ic_left from "../../assets/images/chevron-left.svg"
+import ic_right from "../../assets/images/chevron-right.svg"
+import ic_customer from "../../assets/icons/ic_customer.svg"
+import ic_plane from "../../assets/icons/ic_plane.svg"
+import ic_city from "../../assets/icons/ic_city.svg"
+import ic_accomodation from "../../assets/icons/ic_accomodation.svg"
+import { getWcmsValue } from "../../utils/WcmsHelper";
+import { TOTAL_ACCOMODATION_TEXT, TOTAL_CITY_TEXT, TOTAL_CUSTOMER_TEXT, TOTAL_TOUR_TEXT } from "../../utils/WcmsConstants";
 
 const BannerSlider = () => {
     return (   

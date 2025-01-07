@@ -13,6 +13,14 @@ export default {
         archivo: ['"Archivo"', 'serif'],
         alike: ['"Alike"', 'serif'],
       },
+      colors:  {
+        primary: {
+          DEFAULT : "#2C3C7C"
+        },
+        secondary: {
+          DEFAULT: "#F97A0B"
+        }
+      }
     },
   },
   plugins: [],

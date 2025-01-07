@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import NavigationBar from "../../component/sections/NavigationBar";
+import NavigationBar from "../../sections/NavigationBar";
 
 const DetailPage = () => {
     const { type } = useParams<{ type: string }>();

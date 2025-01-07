@@ -1,5 +1,5 @@
-import ic_timer from "../assets/icons/ic_tour_duration.svg"
-import ic_min_people from "../assets/icons/ic_people_min.svg"
+import ic_timer from "../../assets/icons/ic_tour_duration.svg"
+import ic_min_people from "../../assets/icons/ic_people_min.svg"
 import { Rating } from "@mui/material";
 
 interface IRecommendationPackageProps {

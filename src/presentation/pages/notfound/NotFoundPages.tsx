@@ -1,7 +1,7 @@
 // NotFound.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NavigationBar from '../../component/sections/NavigationBar';
+import NavigationBar from '../../sections/NavigationBar';
 
 const NotFoundPage = () => {
     return (

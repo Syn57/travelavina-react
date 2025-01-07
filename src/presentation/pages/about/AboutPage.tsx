@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationBar from "../../component/sections/NavigationBar";
+import NavigationBar from "../../sections/NavigationBar";
 
 const AboutPage = () => {
     return (
