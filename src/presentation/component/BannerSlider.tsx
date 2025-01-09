@@ -1,4 +1,3 @@
-import React, { useState, useEffect, useRef, MutableRefObject } from "react";
 import banners from "../../configs/homeSliderBanner.json"; 
 import { Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
@@ -16,7 +15,7 @@ import { TOTAL_ACCOMODATION_TEXT, TOTAL_CITY_TEXT, TOTAL_CUSTOMER_TEXT, TOTAL_TO
 
 const BannerSlider = () => {
     return (   
-        <div className="relative swiper-frame w-full overflow-hidden flex h-[800px] align-middle justify-center">
+        <div className="relative swiper-frame w-full overflow-hidden flex h-[400px] sm:h-[800px] align-middle justify-center">
             <Swiper
                 modules={[Navigation, Pagination]}
                 className="swiper-container w-full h-full"
@@ -32,8 +31,8 @@ const BannerSlider = () => {
                         <BannerSilderItem banner={banner}/>
                     </SwiperSlide>
                 ))}
-                <SliderButton className="prev-button left-0 ml-16" isRight={false}/>
-                <SliderButton className="next-button right-0  mr-16" isRight={true}/>
+                <SliderButton className="prev-button left-0 ml-4 sm:ml-8 lg:ml-16" isRight={false}/>
+                <SliderButton className="next-button right-0  mr-4 sm:mr-8 lg:mr-16" isRight={true}/>
                 <BottomNavbar />
             </Swiper>
         </div>     
@@ -67,7 +66,7 @@ const SliderButton = ({className = "", isRight = false}) => {
     const swiper = useSwiper();
     return (
         <button onClick={() => {isRight? swiper.slideNext() : swiper.slidePrev()}}>
-            <img className={`h-[32px] w-[32px] top-[400px] absolute z-30 ${className}`} src={isRight? ic_right : ic_left}></img>
+            <img className={`h-[32px] w-[32px] top-[200px] sm:top-[400px] absolute z-30 ${className}`} src={isRight? ic_right : ic_left}></img>
         </button>
     );
 };

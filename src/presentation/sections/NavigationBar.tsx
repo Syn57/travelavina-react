@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
-import ic_phone from "../../assets/icons/ic_phone.svg"
+import ic_phone from "../../assets/icons/ic_phone.svg";
+import ic_menu from "../../assets/icons/ic_menu.svg";
 import NavLogo from "../component/NavLogo";
 import NavItem from "../component/NavItem";
 import { getWcmsValue } from "../../utils/WcmsHelper";
@@ -9,6 +10,7 @@ import { NavigationChipItemDomain } from "../../domain/model/assets/NavigationCh
 import container from "../../di/Modules";
 import { AssetProviderRepository } from "../../domain/repositories/AssetProvideRepository";
 import { TYPES } from "../../di/Types";
+import { EVENT_LISTENER_RESIZE, MIN_WIDTH_NAVBAR } from "../../utils/Constants";
 
 const NavigationBar = ({ className = "" }) => {
     const [navigationChips, setNavigationChips] = useState<NavigationChipItemDomain[]>([]);
@@ -18,25 +20,16 @@ const NavigationBar = ({ className = "" }) => {
 
     useEffect(() => {
         getNavbarChips(setNavigationChips);
-
-        // Check for overflow
         const checkOverflow = () => {
             if (navRef.current) {
-                const isOverflow =
-                    navRef.current.scrollWidth > navRef.current.clientWidth; // Check if content is overflowing
+                const isOverflow = navRef.current.clientWidth < MIN_WIDTH_NAVBAR;
                 setIsOverflowing(isOverflow);
-                console.log(`scrollwidth: ${navRef.current.scrollWidth}`)
-                console.log(`clientWidth: ${navRef.current.clientWidth}`)
-                console.log(`logic: ${navRef.current.scrollWidth >= navRef.current.clientWidth}`)
             }
         };
-
-        // Check overflow on load and resize
         checkOverflow();
-        window.addEventListener("resize", checkOverflow);
-
+        window.addEventListener(EVENT_LISTENER_RESIZE, checkOverflow);
         return () => {
-            window.removeEventListener("resize", checkOverflow);
+            window.removeEventListener(EVENT_LISTENER_RESIZE, checkOverflow);
         };
     }, []);
 
@@ -46,58 +39,49 @@ const NavigationBar = ({ className = "" }) => {
     return (
         <nav className={`${className} w-full`}>
             <div
-                ref={navRef} // Attach the ref to the navigation container
-                className={`${
-                    isHomePage ? "absolute bg-white/50 z-20 backdrop-blur-lg" : "relative bg-gray-400"
-                } w-full flex items-center px-20 fixed top-0 left-0`}
+                ref={navRef}
+                className={`${isHomePage ? "absolute z-20 backdrop-blur-lg" : "relative bg-gray-400"} w-full`}
             >
-                <NavLogo className="mr-auto shrink-0" />
-
-                {/* Mobile Menu Toggle */}
-                {isOverflowing ? (
-                    <div className="ml-auto">
-                        <button
-                            onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="text-white focus:outline-none"
-                        >
-                            {/* Menu Icon */}
-                            <div className="space-y-1">
-                                <div className="w-6 h-0.5 bg-white"></div>
-                                <div className="w-6 h-0.5 bg-white"></div>
-                                <div className="w-6 h-0.5 bg-white"></div>
-                            </div>
-                        </button>
-                    </div>
-                ) : (
-                    <div className="flex space-x-4 items-center justify-center ml-auto">
+                <div className={`
+                    ${isHomePage ? "bg-white/50 backdrop-blur-3xl" : "relative bg-gray-400"} 
+                    w-full flex items-center top-0 left-0 px-5 sm:px-10 lg:px-20`
+                }>
+                    <NavLogo className="mr-auto shrink-0" />
+                    {/* Mobile Menu Toggle */}
+                    {isOverflowing ? (
+                        <div className="ml-auto">
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                className="text-white focus:outline-none"
+                            >
+                                <img src={ic_menu}/>
+                            </button>
+                        </div>
+                    ) : (
+                        <div className="flex space-x-4 items-center justify-center ml-auto">
+                            {navigationChips.map((item) => (
+                                <NavItem key={item.route} title={item.title} route={item.route} />
+                            ))}
+                            <div className="text-white text-sm">|</div>
+                            <a
+                                href={getWcmsValue(WHATSAPP_LINK)}
+                                className="text-white flex-shrink-0 items-center"
+                            >
+                                <img className="h-4 w-4" src={ic_phone} alt="Phone Icon" />
+                            </a>
+                        </div>
+                    )}
+                </div>
+                
+                {/* Expanded Mobile Menu */}
+                {isOverflowing && isMenuOpen && (
+                    <div className="bg-white/50 bg-gray-400 w-full flex flex-col items-center py-4">
                         {navigationChips.map((item) => (
                             <NavItem key={item.route} title={item.title} route={item.route} />
                         ))}
-                        <div className="text-white text-sm">|</div>
-                        <a
-                            href={getWcmsValue(WHATSAPP_LINK)}
-                            className="text-white flex-shrink-0 items-center"
-                        >
-                            <img className="h-4 w-4" src={ic_phone} alt="Phone Icon" />
-                        </a>
                     </div>
                 )}
             </div>
-
-            {/* Expanded Mobile Menu */}
-            {isOverflowing && isMenuOpen && (
-                <div className="bg-gray-400 w-full flex flex-col items-center py-4">
-                    {navigationChips.map((item) => (
-                        <NavItem key={item.route} title={item.title} route={item.route} />
-                    ))}
-                    <a
-                        href={getWcmsValue(WHATSAPP_LINK)}
-                        className="text-white flex-shrink-0 items-center mt-4"
-                    >
-                        <img className="h-4 w-4" src={ic_phone} alt="Phone Icon" />
-                    </a>
-                </div>
-            )}
         </nav>
     );
 };
