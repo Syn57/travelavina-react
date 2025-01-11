@@ -6,10 +6,10 @@ import 'swiper/bundle';
 import BannerSilderItem from "./BannerSliderItem";
 import ic_left from "../../assets/images/chevron-left.svg"
 import ic_right from "../../assets/images/chevron-right.svg"
-import ic_customer from "../../assets/icons/ic_customer.svg"
-import ic_plane from "../../assets/icons/ic_plane.svg"
-import ic_city from "../../assets/icons/ic_city.svg"
-import ic_accomodation from "../../assets/icons/ic_accomodation.svg"
+import ic_customer from "../../assets/icons/ic_customer_black.svg"
+import ic_plane from "../../assets/icons/ic_plane_black.svg"
+import ic_city from "../../assets/icons/ic_city_black.svg"
+import ic_accomodation from "../../assets/icons/ic_accomodation_black.svg"
 import { getWcmsValue } from "../../utils/WcmsHelper";
 import { TOTAL_ACCOMODATION_TEXT, TOTAL_CITY_TEXT, TOTAL_CUSTOMER_TEXT, TOTAL_TOUR_TEXT } from "../../utils/WcmsConstants";
 
@@ -41,7 +41,7 @@ const BannerSlider = () => {
 
 const BottomNavbar = () => {
     return (
-        <div className="absolute bottom-0 w-full flex bg-[#2C3C7C]/80 z-20 backdrop-blur-lg justify-center items-center space-x-24 h-[100px]">
+        <div className="absolute bottom-0 w-full flex bg-primary/80 z-20 justify-center items-center space-x-24 h-[100px]">
             <div className="flex space-x-4 justify-center items-center">
                 <img src={ic_customer} className="h-8 w-8"></img>
                 <p className="text-white font-medium text-2xl font-poppins">{getWcmsValue(TOTAL_CUSTOMER_TEXT)}</p>

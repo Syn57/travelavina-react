@@ -22,7 +22,7 @@ body {
 }
 
 @font-face {
-    font-family: 'Alata';
+    font-family: 'Alice';
     src: url('assets/fonts/alice_regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
@@ -38,6 +38,20 @@ body {
 @font-face {
     src: url('assets/fonts/alike_regular.ttf') format('truetype');
     font-family: "Alike";
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('assets/fonts/inria_thin.ttf') format('truetype');
+    font-family: "Inria Serif";
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('assets/fonts/alkalami_regular.ttf') format('truetype');
+    font-family: "Alkalami";
     font-weight: 400;
     font-style: normal;
 }

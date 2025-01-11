@@ -1,0 +1,346 @@
+[
+    {
+        "title": "Premium Trip",
+        "column" : 8,
+        "height" : 500,
+        "gap" : 0,
+        "card_type": "A",
+        "cards": [
+            {
+                "title" : "Labuan Bajo",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Banda Neira",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bali",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Raja Ampat",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Gorontalo",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Danau Toba",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Tanah Toraja",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Tanjung Putri",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        
+        ]
+    },
+    {
+        "title": "Survival Trip",
+        "column" : 3,
+        "height" : 400,
+        "gap" : 3,
+        "card_type": "B",
+        "cards": [
+            {
+                "title" : "Pulau Rote",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Pulau Siroktobe",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bangka Belitung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    },
+    {
+        "title": "Company Outing",
+        "column" : 4,
+        "height" : 300,
+        "gap" : 0,
+        "card_type": "C",
+        "cards": [
+            {
+                "title" : "Makasar",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Lampung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Labuan Bajo",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bali",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Banyuwangi",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Yogyakarta",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Kepulauan Seribu",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Dieng",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Derawan",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Malang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bogor",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bandung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Lombok",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Tawang mangu",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Semarang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Tanjung Putri",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    },
+    {
+        "title": "Education Trip",
+        "column" : 4,
+        "height" : 250,
+        "gap" : 5,
+        "card_type": "B",
+        "cards": [
+            {
+                "title" : "Jogja",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Semarang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Jakarta",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Surabaya",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bogor",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bandung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Malang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bali",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    },
+    {
+        "title": "Open Trip & Private Trip",
+        "column" : 4,
+        "height" : 400,
+        "gap" : 1,
+        "card_type": "D",
+        "cards": [
+            {
+                "title" : "Makasar",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Lampung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Labuan Bajo",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bali",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Banyuwangi",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Yogyakarta",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Kepulauan Seribu",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Dieng",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Derawan",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Malang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bogor",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bandung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Lombok",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Tawang mangu",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Semarang",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    },
+    {
+        "title": "Special Trip",
+        "column" : 5,
+        "height" : 400,
+        "gap" : 3,
+        "card_type": "E",
+        "cards": [
+            {
+                "title" : "Pulau Rote",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Pulau Siroktobe",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bangka Belitung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Pulau Siroktobe",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            },
+            {
+                "title" : "Bangka Belitung",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    },
+    {
+        "title": "Custom Your Trip",
+        "column" : 1,
+        "height" : 400,
+        "gap" : 3,
+        "card_type": "F",
+        "cards": [
+            {
+                "title" : "Rencanakan Liburan Anda Sesuai  Dengan Budget & Request",
+                "image" : "src/assets/images/slider-banner-3.jpg",
+                "route" : "https://wa.me/6287875128049"
+            }
+        ]
+    }
+]

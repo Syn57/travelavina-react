@@ -1,17 +1,17 @@
 [
     {
-        "title": "HOME",
+        "title": "Home",
         "route": "/",
         "data": []
     },
     {
-        "title": "ABOUT",
+        "title": "About",
         "route": "/about",
         "data": []
     },
     {
-        "title": "PREMIUM TRIP",
-        "route": "/detail/premium",
+        "title": "Paket Wisata",
+        "route": "/tour-packages",
         "data": [
             {
                 "contentType" : "banner",
@@ -28,48 +28,5 @@
                 }
             }
         ]
-    },
-    {
-        "title": "SURVIVAL TRIP",
-        "route": "/detail/survival",
-        "data": [
-            {
-                "contentType" : "text",
-                "contentData" : {
-                    "title" : "title text",
-                    "route" : "/route"
-                }
-            }
-        ]
-    },
-    {
-        "title": "COMPANY OUTING",
-        "route": "/detail/company",
-        "data": []
-    },
-    {
-        "title": "STUDY TOUR",
-        "route": "/detail/study",
-        "data": []
-    },
-    {
-        "title": "OPEN TRIP",
-        "route": "/detail/open",
-        "data": []
-    },
-    {
-        "title": "MICE",
-        "route": "/detail/mice",
-        "data": []
-    },
-    {
-        "title": "TICKETS",
-        "route": "/detail/ticket",
-        "data": []
-    },
-    {
-        "title": "UMROH & HAJI",
-        "route": "/detail/umroh",
-        "data": []
     }
 ]

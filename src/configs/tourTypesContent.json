@@ -1,0 +1,26 @@
+[
+    {
+        "iconPath" : "/src/assets/icons/ic_city_tour.svg",
+        "title" : "City Tour"
+    },
+    {
+        "iconPath" : "/src/assets/icons/ic_history.svg",
+        "title" : "History"
+    },
+    {
+        "iconPath" : "/src/assets/icons/ic_mountain.svg",
+        "title" : "Adventure"
+    },
+    {
+        "iconPath" : "/src/assets/icons/ic_religious.svg",
+        "title" : "Spiritual"
+    },
+    {
+        "iconPath" : "/src/assets/icons/ic_tradition.svg",
+        "title" : "Culture"
+    },
+    {
+        "iconPath" : "/src/assets/icons/ic_adventure.svg",
+        "title" : "Nature"
+    }
+]

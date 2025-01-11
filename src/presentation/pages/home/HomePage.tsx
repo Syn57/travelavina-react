@@ -1,10 +1,9 @@
-import React from "react";
 import NavigationBar from "../../sections/NavigationBar";
 import BannerSlider from "../../component/BannerSlider";
 import SpotlightDestination from "../../sections/SpotlightDestination";
 import HomepageCard from "../../sections/HompageCard";
 import Testimoni from "../../sections/Testimoni";
-import TourPackages from "../../sections/TourPackages";
+import TourPackagesHomeSection from "../../sections/TourPackagesHomeSection";
 import RecommendedPackage from "../../sections/RecommendedPackage";
 import TourType from "../../sections/TourType";
 import HolidayBenefit from "../../sections/HolidayBenefit";
@@ -13,13 +12,11 @@ const HomePage = () => {
     return (
         <div className="relative items-center justify-start">
             <NavigationBar />
-            <div>
-                <BannerSlider />
-            </div>
+            <BannerSlider />
             <SpotlightDestination />
             <HomepageCard />
             <Testimoni />
-            <TourPackages />
+            <TourPackagesHomeSection />
             <RecommendedPackage />
             <TourType />
             <HolidayBenefit />

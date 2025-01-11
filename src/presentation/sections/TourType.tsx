@@ -1,34 +1,48 @@
-import ic_city from "../../assets/icons/ic_city_tour.svg"
-import ic_history from "../../assets/icons/ic_history.svg"
-import ic_adventure from "../../assets/icons/ic_adventure.svg"
-import ic_spiritual from "../../assets/icons/ic_religious.svg"
-import ic_culture from "../../assets/icons/ic_tradition.svg"
+import { useEffect, useState } from "react";
+import { TourTypeDomain } from "../../domain/model/assets/TourTypeDomain";
+import container from "../../di/Modules";
+import { AssetProviderRepository } from "../../domain/repositories/AssetProvideRepository";
+import { TYPES } from "../../di/Types";
 
 const TourType = () => {
-    const types: [string, string][] = [
-        [ic_city, "City Tour"],
-        [ic_history, "Historical Tour"],
-        [ic_adventure, "Adventure"],
-        [ic_spiritual, "Spiritual"],
-        [ic_culture, "Culture"],
-    ];
+    const [tourTypes, setTourTypes] = useState<TourTypeDomain[]>([]);
+    
+    useEffect(() => {
+        getTourTypes(setTourTypes);
+    }, []);
+    console.log(tourTypes);
     return (
         <div className="text-center">
             <h2 className="font-alice text-5xl mt-20 mb-16">Categories Tour Types</h2>
-            <div className="flex justify-center gap-16">
-                {types.map((category, index) => (
-                    <div key={index} className="flex flex-col items-center">
+            
+            {/* Responsive layout */}
+            <div 
+                className="
+                    md:flex md:flex-wrap md:justify-center md:gap-16 
+                    grid grid-cols-2
+                "
+            >
+                {tourTypes.map((tour, index) => (
+                    <div key={index} className="flex flex-col items-center md:mt-0 mt-8 w-auto">
                         <img
-                            src={category[0]}
-                            alt={category[1]}
+                            src={tour.iconPath}
+                            alt={tour.title}
                             className="w-16 h-16"
                         />
-                        <span className="text-lg mt-2 font-alice ">{category[1]}</span>
+                        <span className="text-lg mt-2 font-alice">{tour.title}</span>
                     </div>
                 ))}
             </div>
         </div>
     );
 };
+
+const getTourTypes = async (
+    onFinishFetchAction: (arg0: TourTypeDomain[]) => void 
+) => {
+    const repository = container.get<AssetProviderRepository>(TYPES.AssetProviderRepository);
+    const data = await repository.getTourTypeAssets();
+    onFinishFetchAction(data);
+}
 
 export default TourType;

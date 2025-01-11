@@ -16,4 +16,14 @@ export const TESTIMONI_SUBTITLE = "testimoni_subtitle";
 export const TESTIMONI_DESC = "testimoni_desc";
 export const TESTIMONI_NAME = "testimoni_name"
 export const TOUR_PACKAGES_TITLE = "tour_packages_title";
-export const TOUR_PACKAGES_DESC = "tour_packages_desc"
+export const TOUR_PACKAGES_DESC = "tour_packages_desc";
+export const HOLIDAY_TITLE = "holiday_title";
+export const HOLIDAY_COLUMN_1_TITLE = "holiday_column_1_title";
+export const HOLIDAY_COLUMN_1_DESC = "holiday_column_1_desc";
+export const HOLIDAY_COLUMN_2_TITLE = "holiday_column_2_title";
+export const HOLIDAY_COLUMN_2_DESC = "holiday_column_2_desc";
+export const HOLIDAY_COLUMN_3_TITLE = "holiday_column_3_title";
+export const HOLIDAY_COLUMN_3_DESC = "holiday_column_3_desc";
+export const HOLIDAY_COLUMN_4_TITLE = "holiday_column_4_title";
+export const HOLIDAY_COLUMN_4_DESC = "holiday_column_4_desc";
+

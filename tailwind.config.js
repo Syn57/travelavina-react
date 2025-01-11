@@ -12,6 +12,8 @@ export default {
         alice: ['"Alice"', 'serif'],
         archivo: ['"Archivo"', 'serif'],
         alike: ['"Alike"', 'serif'],
+        inria: ['"Inria Serif"', 'serif'],
+        alkalami: ['"Alkalami"', 'serif']
       },
       colors:  {
         primary: {
