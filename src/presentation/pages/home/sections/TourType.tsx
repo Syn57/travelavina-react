@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { TourTypeDomain } from "../../domain/model/assets/TourTypeDomain";
-import container from "../../di/Modules";
-import { AssetProviderRepository } from "../../domain/repositories/AssetProvideRepository";
-import { TYPES } from "../../di/Types";
+import { TourTypeDomain } from "../../../../domain/model/assets/TourTypeDomain";
+import container from "../../../../di/Modules";
+import { AssetProviderRepository } from "../../../../domain/repositories/AssetProvideRepository";
+import { TYPES } from "../../../../di/Types";
 
 const TourType = () => {
     const [tourTypes, setTourTypes] = useState<TourTypeDomain[]>([]);
@@ -14,13 +14,9 @@ const TourType = () => {
     return (
         <div className="text-center">
             <h2 className="font-alice text-5xl mt-20 mb-16">Categories Tour Types</h2>
-            
-            {/* Responsive layout */}
-            <div 
-                className="
-                    md:flex md:flex-wrap md:justify-center md:gap-16 
-                    grid grid-cols-2
-                "
+            <div className="
+                md:flex md:flex-wrap md:justify-center md:gap-16 
+                grid grid-cols-2"
             >
                 {tourTypes.map((tour, index) => (
                     <div key={index} className="flex flex-col items-center md:mt-0 mt-8 w-auto">

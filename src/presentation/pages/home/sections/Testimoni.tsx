@@ -1,6 +1,6 @@
-import bg_testi from "../../assets/images/slider-banner-2.jpg"
-import { TESTIMONI_DESC, TESTIMONI_NAME, TESTIMONI_SUBTITLE, TESTIMONI_TITLE } from "../../utils/WcmsConstants";
-import { getWcmsValue } from "../../utils/WcmsHelper";
+import bg_testi from "../../../../assets/images/slider-banner-2.jpg"
+import { TESTIMONI_DESC, TESTIMONI_NAME, TESTIMONI_SUBTITLE, TESTIMONI_TITLE } from "../../../../utils/WcmsConstants";
+import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
 const Testimoni = ({ className = "" }) => {
     return (

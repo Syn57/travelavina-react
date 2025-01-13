@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
-import container from "../../di/Modules";
-import { TYPES } from "../../di/Types";
-import { TourPackageDomain } from "../../domain/model/configs/TourPackageDomain";
-import { ConfigsProviderRepository } from "../../domain/repositories/ConfigsProviderRepository";
-import CardTourPackageTypeA from "../component/CardTourPackageTypeA";
-import { gridColumnValueConverter, gridGapValueConverter, gridHeightValueConverter } from "../../utils/StringHelper";
-import CardTourPackageTypeB from "../component/CardTourPackageTypeB";
-import CardTourPackageTypeC from "../component/CardTourPackageTypeC";
-import CardTourPackageTypeD from "../component/CardTourPackageTypeD";
-import CardTourPackageTypeE from "../component/CardTourPackageTypeE";
-import CardTourPackageTypeF from "../component/CardTourPackageTypeF";
+import container from "../../../../di/Modules";
+import { TYPES } from "../../../../di/Types";
+import { TourPackageDomain } from "../../../../domain/model/configs/TourPackageDomain";
+import { ConfigsProviderRepository } from "../../../../domain/repositories/ConfigsProviderRepository";
+import CardTourPackageTypeA from "../../../component/CardTourPackageTypeA";
+import { gridColumnValueConverter, gridGapValueConverter, gridHeightValueConverter } from "../../../../utils/StringHelper";
+import CardTourPackageTypeB from "../../../component/CardTourPackageTypeB";
+import CardTourPackageTypeC from "../../../component/CardTourPackageTypeC";
+import CardTourPackageTypeD from "../../../component/CardTourPackageTypeD";
+import CardTourPackageTypeE from "../../../component/CardTourPackageTypeE";
+import CardTourPackageTypeF from "../../../component/CardTourPackageTypeF";
 
 const TourPackagesContent = () => {
     const [tourPackages, setTourPackages] = useState<TourPackageDomain[]>([]);

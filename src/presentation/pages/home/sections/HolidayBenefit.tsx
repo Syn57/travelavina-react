@@ -1,5 +1,5 @@
-import { HOLIDAY_COLUMN_1_DESC, HOLIDAY_COLUMN_1_TITLE, HOLIDAY_COLUMN_2_DESC, HOLIDAY_COLUMN_2_TITLE, HOLIDAY_COLUMN_3_DESC, HOLIDAY_COLUMN_3_TITLE, HOLIDAY_COLUMN_4_DESC, HOLIDAY_COLUMN_4_TITLE, HOLIDAY_TITLE } from "../../utils/WcmsConstants";
-import { getWcmsValue } from "../../utils/WcmsHelper";
+import { HOLIDAY_COLUMN_1_DESC, HOLIDAY_COLUMN_1_TITLE, HOLIDAY_COLUMN_2_DESC, HOLIDAY_COLUMN_2_TITLE, HOLIDAY_COLUMN_3_DESC, HOLIDAY_COLUMN_3_TITLE, HOLIDAY_COLUMN_4_DESC, HOLIDAY_COLUMN_4_TITLE, HOLIDAY_TITLE } from "../../../../utils/WcmsConstants";
+import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
 const HolidayBenefit = () => {
     return (

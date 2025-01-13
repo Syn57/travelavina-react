@@ -1,5 +1,5 @@
-import homeCards from  "../../configs/homePageCard.json"
-import HomePageCardItem from "../component/HomePageCardItem";
+import homeCards from  "../../../../configs/homePageCard.json"
+import HomePageCardItem from "../../../component/HomePageCardItem";
 
 const HomepageCard = () => {
     return (

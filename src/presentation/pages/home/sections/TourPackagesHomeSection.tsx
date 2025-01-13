@@ -1,5 +1,5 @@
-import { TOUR_PACKAGES_DESC, TOUR_PACKAGES_TITLE } from "../../utils/WcmsConstants";
-import { getWcmsValue } from "../../utils/WcmsHelper";
+import { TOUR_PACKAGES_DESC, TOUR_PACKAGES_TITLE } from "../../../../utils/WcmsConstants";
+import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
 const TourPackagesHomeSection = () => {
     return (

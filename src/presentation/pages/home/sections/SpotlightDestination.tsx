@@ -1,5 +1,5 @@
-import { SPOTLIGHT_DESTINATION_DESC, SPOTLIGHT_DESTINATION_TITLE } from "../../utils/WcmsConstants";
-import { getWcmsValue } from "../../utils/WcmsHelper";
+import { SPOTLIGHT_DESTINATION_DESC, SPOTLIGHT_DESTINATION_TITLE } from "../../../../utils/WcmsConstants";
+import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
 
 const SpotlightDestination = () => {

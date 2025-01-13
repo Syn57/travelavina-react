@@ -1,8 +1,8 @@
 [
     {
         "title": "Premium Trip",
-        "column" : 8,
-        "height" : 500,
+        "column" : 3,
+        "height" : 400,
         "gap" : 0,
         "card_type": "A",
         "cards": [

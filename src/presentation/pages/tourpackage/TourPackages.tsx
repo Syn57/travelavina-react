@@ -1,6 +1,6 @@
 import ImageBannerStatic from "../../sections/ImageBannerStatic";
 import NavigationBar from "../../sections/NavigationBar";
-import TourPackagesContent from "../../sections/TourPackageContent";
+import TourPackagesContent from "./sections/TourPackageContent";
 
 const TourPackages = () => {
     return (
