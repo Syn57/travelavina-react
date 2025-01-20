@@ -3,7 +3,7 @@ import navigationChips from "../../configs/navigationChipBar.json"
 import tourTypes from "../../configs/tourTypesContent.json"
 import associates from "../../configs/assets/associates.json"
 import galleryTrips from "../../configs/assets/galleryTrip.json"
-import { PREFIX_PATH_ICONS_HEADER } from "../../utils/Constants";
+import { PREFIX_PATH_ICONS_HEADER, RC_KEY_SOCIAL_MEDIA_HEADER } from "../../utils/Constants";
 import { getAbsolutePathAsset } from "../../utils/AsetPathHelper";
 import { HeaderIconDomain } from "../../domain/model/assets/HeaderIconDomain";
 import { AssetProviderRepository } from "../../domain/repositories/AssetProvideRepository";
@@ -11,6 +11,7 @@ import { NavigationChipItemDomain } from "../../domain/model/assets/NavigationCh
 import { TourTypeDomain } from "../../domain/model/assets/TourTypeDomain";
 import { AssociateDomain } from "../../domain/model/assets/AssociateDomain";
 import { GalleryTripDomain } from "../../domain/model/assets/GalleryTripDomain";
+import { fetchRemoteConfig } from "../firebase/FirebaseRemoteConfig";
 
 export class AssetProviderRepositoryImpl implements AssetProviderRepository {
     async getGalleryTripAssets(): Promise<GalleryTripDomain[]> {
@@ -32,10 +33,16 @@ export class AssetProviderRepositoryImpl implements AssetProviderRepository {
         }));
     }
     async getHeaderAssets(): Promise<HeaderIconDomain[]> {
-        return headers.map(header => ({
-            iconPath: getAbsolutePathAsset(PREFIX_PATH_ICONS_HEADER, header.iconPath),
-            url: header.url
-        }));
+        try {
+            const jsonString = await fetchRemoteConfig(RC_KEY_SOCIAL_MEDIA_HEADER)
+            const data: HeaderIconDomain[] = JSON.parse(jsonString);
+            return data.map(header => ({
+                iconPath: getAbsolutePathAsset(PREFIX_PATH_ICONS_HEADER, header.iconPath),
+                url: header.url
+            }));
+        } catch (error) {
+            return [];
+        }
     }
     async getNavigationbarAssets(): Promise<NavigationChipItemDomain[]> {
         return navigationChips.map(chip => ({
