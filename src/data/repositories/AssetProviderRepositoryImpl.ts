@@ -37,7 +37,6 @@ export class AssetProviderRepositoryImpl implements AssetProviderRepository {
             url: header.url
         }));
     }
-
     async getNavigationbarAssets(): Promise<NavigationChipItemDomain[]> {
         return navigationChips.map(chip => ({
             title: chip.title,

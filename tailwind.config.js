@@ -13,7 +13,8 @@ export default {
         archivo: ['"Archivo"', 'serif'],
         alike: ['"Alike"', 'serif'],
         inria: ['"Inria Serif"', 'serif'],
-        alkalami: ['"Alkalami"', 'serif']
+        alkalami: ['"Alkalami"', 'serif'],
+        alatsi: ['"Alatsi"', 'serif']
       },
       colors:  {
         primary: {

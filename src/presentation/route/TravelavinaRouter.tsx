@@ -15,7 +15,7 @@ const TravelavinaRouter = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/tour-packages" element={<TourPackages />} />
-                <Route path="/detail/:type" element={<DetailPage />} />
+                <Route path="/package/:type" element={<DetailPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />

@@ -1,0 +1,58 @@
+[
+    {
+        "id" : "labuan-bajo",
+        "title" : "Labuan Bajo, NTT",
+        "packageType" : "Premium Trip",
+        "imageUrl" : "/src/assets/images/slider-banner-1.jpg",
+        "rating" : 5.0,
+        "bookUrl" : "https://wa.me/6287875128049",
+        "location" : "Pulau Nadar, NTT",
+        "overview" : "Perjalanan premium di Labuan Bajo menawarkan pengalaman mewah menjelajahi kapal Pulau Komodo dan sekitarnya dengan eksklusif. Dilengkapi fasilitas lengkap seperti kabin elegan, kolam renang, jacuzzi, dan layanan chef pribadi, Anda dapat menikmati aktivitas snorkeling, diving, hingga island hopping ke destinasi ikonik seperti Pink Beach dan Pulau Padar. Dengan layanan pribadi dan rencana perjalanan fleksibel, perjalanan ini menggabungkan petualangan, kenyamanan, dan kemewahan untuk menciptakan liburan yang tak terlupakan.",
+        "includeExclude" : {
+            "include" : [
+                "Specialized bilingual guide",
+                "Private Transport",
+                "Entrance Fees",
+                "Lunch Box"
+            ],
+            "exclude" : [
+                "GuideGuide Service Feebook",
+                "Room Service Fees",
+                "Driver Service Fee",
+                "Any Private Expenses"
+            ]
+        },
+        "schedule" : [
+            {
+                "title" : "Hari 1 : Kedatangan dan Relaksasi",
+                "desc" : [
+                    "08:00-11:00: Penerbangan menuju Labuan Bajo.",
+                    "11:30-12:30: Penjemputan di bandara dan perjalanan menuju hotel/resor mewah.",
+                    "12:30-14:00: Check-in di resor, sambutan welcome drink, dan santap siang"
+                ]
+            },
+            {
+                "title" : "Hari 2 : Eksplorasi Pulau dan Snorkeling",
+                "desc" : [
+                    "08:00-11:00: Penerbangan menuju Labuan Bajo.",
+                    "11:30-12:30: Penjemputan di bandara dan perjalanan menuju hotel/resor mewah.",
+                    "12:30-14:00: Check-in di resor, sambutan welcome drink, dan santap siang"
+                ]
+            },
+            {
+                "title" : "Hari 3 : Relaksasi dan Kepulangan",
+                "desc" : [
+                    "08:00-11:00: Penerbangan menuju Labuan Bajo.",
+                    "11:30-12:30: Penjemputan di bandara dan perjalanan menuju hotel/resor mewah.",
+                    "12:30-14:00: Check-in di resor, sambutan welcome drink, dan santap siang"
+                ]
+            }
+        ],
+        "photos" : [
+            "/src/assets/images/slider-banner-1.jpg",
+            "/src/assets/images/slider-banner-2.jpg",
+            "/src/assets/images/slider-banner-3.jpg"
+        ]
+
+    }
+]

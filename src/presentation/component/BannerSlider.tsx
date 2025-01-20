@@ -1,7 +1,7 @@
 import banners from "../../configs/homeSliderBanner.json"; 
 import { Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
-import 'swiper/css'; 
+import 'swiper/css';
 import 'swiper/bundle';
 import BannerSilderItem from "./BannerSliderItem";
 import ic_left from "../../assets/images/chevron-left.svg"
@@ -26,14 +26,14 @@ const BannerSlider = () => {
                 }}
                 pagination={{clickable:true}}
                 loop={true} >
-                {banners.map((banner, _) =>(
-                    <SwiperSlide>
-                        <BannerSilderItem banner={banner}/>
-                    </SwiperSlide>
-                ))}
-                <SliderButton className="prev-button left-0 ml-4 sm:ml-8 lg:ml-16" isRight={false}/>
-                <SliderButton className="next-button right-0  mr-4 sm:mr-8 lg:mr-16" isRight={true}/>
-                <BottomNavbar />
+                    {banners.map((banner, _) =>(
+                        <SwiperSlide>
+                            <BannerSilderItem banner={banner}/>
+                        </SwiperSlide>
+                    ))}
+                    <SliderButton className="prev-button left-0 ml-4 sm:ml-8 lg:ml-16" isRight={false}/>
+                    <SliderButton className="next-button right-0  mr-4 sm:mr-8 lg:mr-16" isRight={true}/>
+                    <BottomNavbar />
             </Swiper>
         </div>     
     );

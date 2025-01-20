@@ -2,49 +2,49 @@
     {
         "title": "Premium Trip",
         "column" : 3,
-        "height" : 400,
+        "height" : 450,
         "gap" : 0,
         "card_type": "A",
         "cards": [
             {
                 "title" : "Labuan Bajo",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Banda Neira",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bali",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Raja Ampat",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Gorontalo",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Danau Toba",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Tanah Toraja",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Tanjung Putri",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         
         ]
@@ -59,17 +59,17 @@
             {
                 "title" : "Pulau Rote",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Pulau Siroktobe",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bangka Belitung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     },
@@ -83,82 +83,82 @@
             {
                 "title" : "Makasar",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Lampung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Labuan Bajo",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bali",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Banyuwangi",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Yogyakarta",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Kepulauan Seribu",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Dieng",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Derawan",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Malang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bogor",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bandung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Lombok",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Tawang mangu",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Semarang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Tanjung Putri",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     },
@@ -172,42 +172,42 @@
             {
                 "title" : "Jogja",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Semarang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Jakarta",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Surabaya",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bogor",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bandung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Malang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bali",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     },
@@ -221,77 +221,77 @@
             {
                 "title" : "Makasar",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Lampung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Labuan Bajo",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bali",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Banyuwangi",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Yogyakarta",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Kepulauan Seribu",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Dieng",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Derawan",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Malang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bogor",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bandung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Lombok",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Tawang mangu",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Semarang",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     },
@@ -305,27 +305,27 @@
             {
                 "title" : "Pulau Rote",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Pulau Siroktobe",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bangka Belitung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Pulau Siroktobe",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             },
             {
                 "title" : "Bangka Belitung",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     },
@@ -339,7 +339,7 @@
             {
                 "title" : "Rencanakan Liburan Anda Sesuai  Dengan Budget & Request",
                 "image" : "src/assets/images/slider-banner-3.jpg",
-                "route" : "https://wa.me/6287875128049"
+                "route" : "/package/labuan-bajo"
             }
         ]
     }
