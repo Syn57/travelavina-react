@@ -8,6 +8,7 @@ const GalleryTrip = () => {
     const [galleryTrips, setGalleryTrips] = useState<GalleryTripDomain[]>([])
     useEffect(() => {
         getGalleryTrip(setGalleryTrips);
+        console.log(galleryTrips);
     }, []);
     return (
       <div className="container mx-auto px-4 py-12">

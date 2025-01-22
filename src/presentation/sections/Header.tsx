@@ -10,7 +10,6 @@ const Header = ({ className = "" }) => {
   useEffect(() => {
     getHeaderIcons(setHeaderIcons)
   }, [])
-  console.log(ic_email)
   return (
     <div className={`${className} bg-primary py-2 flex px-4 w-full space-x-4 justify-end`}>
         {headerIcons.map((header) => (

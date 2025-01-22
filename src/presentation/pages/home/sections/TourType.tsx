@@ -10,7 +10,6 @@ const TourType = () => {
     useEffect(() => {
         getTourTypes(setTourTypes);
     }, []);
-    console.log(tourTypes);
     return (
         <div className="text-center">
             <h2 className="font-alice text-5xl mt-20 mb-16">Categories Tour Types</h2>

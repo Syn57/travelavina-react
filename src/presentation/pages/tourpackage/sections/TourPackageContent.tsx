@@ -17,9 +17,7 @@ const TourPackagesContent = () => {
     useEffect(() => {
         getTourPackages(setTourPackages);
     }, []);
-    tourPackages.forEach((item) => {
-        console.log(gridHeightValueConverter(item.height));
-      });
+    
     return (
         <div className="px-80">
             {tourPackages.map((tourPackage) => (

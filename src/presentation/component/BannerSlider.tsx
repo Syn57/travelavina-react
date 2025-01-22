@@ -1,4 +1,3 @@
-import banners from "../../configs/homeSliderBanner.json"; 
 import { Swiper, SwiperSlide, useSwiper} from 'swiper/react';
 import { Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
@@ -12,8 +11,18 @@ import ic_city from "../../assets/icons/ic_city_black.svg"
 import ic_accomodation from "../../assets/icons/ic_accomodation_black.svg"
 import { getWcmsValue } from "../../utils/WcmsHelper";
 import { TOTAL_ACCOMODATION_TEXT, TOTAL_CITY_TEXT, TOTAL_CUSTOMER_TEXT, TOTAL_TOUR_TEXT } from "../../utils/WcmsConstants";
+import { useEffect, useState } from "react";
+import { SliderBannerDomain } from "../../domain/model/homepage/SliderBannerDomain";
+import container from "../../di/Modules";
+import { ConfigsProviderRepository } from "../../domain/repositories/ConfigsProviderRepository";
+import { TYPES } from "../../di/Types";
+import { AssetProviderRepository } from '../../domain/repositories/AssetProvideRepository';
 
 const BannerSlider = () => {
+    const [banners, setBanners] = useState<SliderBannerDomain[]>([]);
+    useEffect(() =>{
+        getSliderBanner(setBanners);
+    }, []);
     return (   
         <div className="relative swiper-frame w-full overflow-hidden flex h-[400px] sm:h-[800px] align-middle justify-center">
             <Swiper
@@ -69,6 +78,14 @@ const SliderButton = ({className = "", isRight = false}) => {
             <img className={`h-[32px] w-[32px] top-[200px] sm:top-[400px] absolute z-30 ${className}`} src={isRight? ic_right : ic_left}></img>
         </button>
     );
+};
+
+const getSliderBanner = async (
+    onFinishFetchAction: (arg0: SliderBannerDomain[]) => void
+) => {
+    const repository = container.get<ConfigsProviderRepository>(TYPES.ConfigsProviderRepository);
+    const data = await repository.getSliderBanner();
+    onFinishFetchAction(data);
 };
 
 export default BannerSlider
