@@ -22,6 +22,9 @@ export default {
         },
         secondary: {
           DEFAULT: "#F97A0B"
+        },
+        ternary: {
+          DEFAULT: "#7FD8F9"
         }
       }
     },

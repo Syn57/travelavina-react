@@ -1,5 +1,5 @@
 export interface PopularDestinationDomain {
-    rating: number;
+    rating: number,
     destinationTitle: string,
     image: string, 
     route: string

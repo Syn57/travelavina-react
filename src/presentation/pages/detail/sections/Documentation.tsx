@@ -29,14 +29,31 @@ const Documentation = ({packageItem} : {packageItem : PackageDomain}) => {
 
             {/* Swiper for Images */}
             <Swiper
-                pagination={{ clickable: true }}
+                pagination={{ 
+                    clickable: true,
+                }}
                 spaceBetween={20}
                 slidesPerView={2}
                 loop={true}
-                className="swiper-container w-full h-full"
+                style={{
+                    "--swiper-pagination-color": "#F97A0B",
+                    "--swiper-pagination-bullet-inactive-color": "#999999",
+                    "--swiper-pagination-bullet-inactive-opacity": "1",
+                    "--swiper-pagination-bullet-size": "8px",
+                    "--swiper-pagination-bullet-horizontal-gap": "4px",
+                  } as React.CSSProperties}
+                className="swiper-container w-full h-[300px] relative"
             >
-                <SliderButtonDetail className="left-0 ml-4 sm:ml-8 lg:ml-16" isRight={false}/>
-                <SliderButtonDetail className="right-0  mr-4 sm:mr-8 lg:mr-16" isRight={true}/>
+                {/* Left navigation button */}
+                <SliderButtonDetail
+                    className="absolute top-32 -translate-y-1/2 left-4 z-[999]"
+                    isRight={false}
+                />
+                {/* Right navigation button */}
+                <SliderButtonDetail
+                    className="absolute top-32 -translate-y-1/2 right-4 z-[999]"
+                    isRight={true}
+                />
                 {packageItem.photos.map((photo, index) => (
                     <SwiperSlide key={index}>
                         <img
@@ -46,8 +63,8 @@ const Documentation = ({packageItem} : {packageItem : PackageDomain}) => {
                         />
                     </SwiperSlide>
                 ))}
-                
             </Swiper>
+
 
             {/* Share Section */}
             <div className="mt-8">

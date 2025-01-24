@@ -3,6 +3,7 @@ import { TourPackageDomain } from "../model/configs/TourPackageDomain";
 import { PopularDestinationDomain } from "../model/homepage/PopularDestinationDomain";
 import RecommendedPackageDomain from "../model/homepage/RecommendedPackageDomain";
 import { SliderBannerDomain } from "../model/homepage/SliderBannerDomain";
+import { MiceCardDomain } from "../model/mice/MiceCardDomain";
 
 export interface ConfigsProviderRepository {
     getTourPackageConfigs() : Promise<TourPackageDomain[]>
@@ -10,4 +11,5 @@ export interface ConfigsProviderRepository {
     getSliderBanner() : Promise<SliderBannerDomain[]>
     getPopularDestination() : Promise<PopularDestinationDomain[]>
     getRecommendedPackage() : Promise<RecommendedPackageDomain[]>
+    getMiceCard() : Promise<MiceCardDomain[]>
 }
