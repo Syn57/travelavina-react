@@ -16,10 +16,10 @@ const HomepageCard = () => {
     });
     console.log("cat"+homeCards[0]);
     if (homeCards.length != 5 && homeCards[0] == undefined) {
-        return(
+        return (
             <>
             </>
-        )
+        );
     };
     return (
         <>

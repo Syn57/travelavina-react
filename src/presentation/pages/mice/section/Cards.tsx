@@ -13,8 +13,8 @@ const Cards = () => {
     }, []);
 
     return (
-        <div className="min-h-screen p-8 md:px-80 mt-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center justify-center">
+        <div className="md:mx-80 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {miceCards.map((card, index) => (
                     <MiceCardItem
                         key={index}

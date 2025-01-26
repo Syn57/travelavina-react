@@ -5,9 +5,9 @@ const MiceCardItem = ({ card, className="" } : {card: MiceCardDomain, className:
     const navigate = useNavigate();
     const handleClick = () => {
         navigate(card.route); // Navigate to the given path
-      };
+    };
     return (
-        <div className={`w-[475px] rounded-xl overflow-hidden shadow-lg relative ${className} flex-row justify-center items-center h-[550px]`}>
+        <div className={`rounded-xl overflow-hidden shadow-lg relative ${className} flex-row justify-center items-center h-[550px]`}>
             <img
                 src={card.image}
                 className="w-full h-full object-cover"

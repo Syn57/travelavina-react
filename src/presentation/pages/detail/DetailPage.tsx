@@ -8,19 +8,18 @@ import container from "../../../di/Modules";
 import { PackageDomain } from "../../../domain/model/configs/detail/PackagesDomain";
 import ImageAndTitle from "./sections/ImageAndTitle";
 import OverviewAndIncludeExclude from "./sections/OverviewAndIncludeExclude";
-import { Divider } from "@mui/material";
 import Itinerary from "./sections/Itinerary";
 import Documentation from "./sections/Documentation";
 
 const DetailPage = () => {
-    const { type } = useParams<{ type: string }>();
+    const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
     const [loading, setLoading] = useState(true);
     const [packageItem, setPackage] = useState<PackageDomain | null>(null);
     useEffect(() => {
-        const checkState = async() =>{
-            if (type) {
-                const pack = await getPackageItem(type, setPackage);
+        const checkState = async() => {
+            if (id) {
+                const pack = await getPackageItem(id, setPackage);
                 if (!pack) {
                     navigate("/not-found");
                 } else {
@@ -43,7 +42,7 @@ const DetailPage = () => {
         <div className="relative">
             <NavigationBar />
             <ImageBannerStatic title={`${packageItem?.packageType}`} img="/src/assets/images/slider-banner-3.jpg" className=""/>
-            {packageItem ? 
+            { packageItem ? 
                 <>
                     <ImageAndTitle packageItem={packageItem} />
                     <OverviewAndIncludeExclude packageItem={packageItem} />

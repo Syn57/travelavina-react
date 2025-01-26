@@ -6,6 +6,7 @@ import { SliderBannerDomain } from "../../domain/model/homepage/SliderBannerDoma
 import { PopularDestinationDomain } from "../../domain/model/homepage/PopularDestinationDomain";
 import { MiceCardDomain } from "../../domain/model/mice/MiceCardDomain";
 import RecommendedPackageDomain from "../../domain/model/homepage/RecommendedPackageDomain";
+import { MiceDetailDomain } from "../../domain/model/micedetail/MiceDetailDomain";
 import { 
     RC_KEY_DETAIL_PACKAGES,
     RC_KEY_MICE,
@@ -16,6 +17,27 @@ import {
 } from "../../utils/Constants";
 
 export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository {
+
+    async getMiceDetail(key: string): Promise<MiceDetailDomain | null> {
+        try {
+            const jsonString = await fetchRemoteConfig(key);
+            const data: MiceDetailDomain = JSON.parse(jsonString);
+            return data;
+        } catch (error) {
+            return null;
+        }
+    }
+
+    async getPromoMiceCard(key: string): Promise<MiceCardDomain | null> {
+        try {
+            const jsonString = await fetchRemoteConfig(key);
+            const data: MiceCardDomain = JSON.parse(jsonString);
+            return data;
+        } catch (error) {
+            return null;
+        }
+    }
+
     async getMiceCard(): Promise<MiceCardDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_MICE);
@@ -25,6 +47,7 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
             return [];
         }
     }
+
     async getRecommendedPackage(): Promise<RecommendedPackageDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_RECOMMENDED_PACKAGE);
@@ -34,6 +57,7 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
             return [];
         }
     }
+
     async getPopularDestination(): Promise<PopularDestinationDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_POPULAR_DESTINATION);
@@ -43,6 +67,7 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
             return [];
         }
     }
+
     async getSliderBanner(): Promise<SliderBannerDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_SLIDER_BANNER);
@@ -62,6 +87,7 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
             return null;
         }
     }
+
     async getTourPackageConfigs(): Promise<TourPackageDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_TOUR_PACKAGES);
