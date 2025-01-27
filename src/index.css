@@ -62,3 +62,17 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+@font-face {
+    src: url('assets/fonts/abhaya_regular.ttf') format('truetype');
+    font-family: "Abhaya";
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    src: url('assets/fonts/abhaya_bold.ttf') format('truetype');
+    font-family: "Abhaya old";
+    font-weight: 400;
+    font-style: normal;
+}

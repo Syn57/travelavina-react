@@ -8,6 +8,7 @@ import Footer from '../sections/Footer';
 import TourPackages from '../pages/tourpackage/TourPackages';
 import MicePage from '../pages/mice/MicePage';
 import MiceDetailPage from '../pages/micedetail/MiceDetailPage';
+import LainnyaPage from '../pages/lainnya/LainnyaPage';
 
 const TravelavinaRouter = () => {
     return (
@@ -20,6 +21,7 @@ const TravelavinaRouter = () => {
                 <Route path="/package/:id" element={<DetailPage />} />
                 <Route path="/mice" element={<MicePage />} />
                 <Route path="/mice/:type" element={<MiceDetailPage />} />
+                <Route path="/other/:type" element={<LainnyaPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />

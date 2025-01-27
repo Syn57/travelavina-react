@@ -14,7 +14,9 @@ export default {
         alike: ['"Alike"', 'serif'],
         inria: ['"Inria Serif"', 'serif'],
         alkalami: ['"Alkalami"', 'serif'],
-        alatsi: ['"Alatsi"', 'serif']
+        alatsi: ['"Alatsi"', 'serif'],
+        abhaya: ['"Abhaya"', 'serif'],
+        "abhaya-bold": ['"Abhaya Bold"', 'serif']
       },
       colors:  {
         primary: {

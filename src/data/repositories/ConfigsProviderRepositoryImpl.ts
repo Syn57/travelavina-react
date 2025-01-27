@@ -15,8 +15,18 @@ import {
     RC_KEY_SLIDER_BANNER, 
     RC_KEY_TOUR_PACKAGES
 } from "../../utils/Constants";
+import { LainnyaDomain } from "../../domain/model/lainnya/LainnyaDomain";
 
 export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository {
+    async getLainnyaPage(key: string): Promise<LainnyaDomain | null> {
+        try {
+            const jsonString = await fetchRemoteConfig(key);
+            const data: LainnyaDomain = JSON.parse(jsonString);
+            return data;
+        } catch (error) {
+            return null;
+        }
+    }
 
     async getMiceDetail(key: string): Promise<MiceDetailDomain | null> {
         try {
