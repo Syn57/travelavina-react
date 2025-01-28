@@ -8,6 +8,7 @@ import NavigationBar from "../../sections/NavigationBar";
 import ImageBannerStatic from "../../sections/ImageBannerStatic";
 import PhotosAndDesc from "./section/PhotosAndDesc";
 import PromoMiceCard from "../../component/PromoMiceCard";
+import OtherCardItem from "../../component/OtherCardItem";
 
 const LainnyaPage = () => {
     const { type } = useParams<{ type: string }>();
@@ -44,7 +45,12 @@ const LainnyaPage = () => {
             <ImageBannerStatic title={lainnya.bannerText.toUpperCase()} img={lainnya.bannerImage} className=""/>
             <PhotosAndDesc photos={lainnya.photos} sectionTitle={lainnya.sectionTitle} sectionDesc={lainnya.sectionDesc} />
             <h1 className="font-abhaya-bold text-3xl font-semibold w-full text-center mt-10">{lainnya.cardTitle}</h1>
-             {/* TODO: Make cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-12 px-4 md:px-60 mt-8">
+                {   lainnya.cards.map((card, index) => {
+                        return <OtherCardItem card={card} key={index} />  
+                    })
+                }
+            </div>
             <PromoMiceCard rc_key={lainnya.promoRCKey} className={""} />
         </div>
     );
