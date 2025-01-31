@@ -17,9 +17,9 @@ const QuestionAndAnswerCard = ({question, answer} : {question: string, answer: s
     }, [isExpanded]);
 
     return (
-        <div className="mb-2 border border-gray-300 rounded-md">
+        <div className="mb-2 rounded-md mt-4">
             <button
-                className="flex justify-between items-center w-full p-4 bg-blue-800 text-white text-left font-semibold"
+                className="flex justify-between items-center w-full p-4 bg-primary text-white text-left font-bold font-algreya text-xl"
                 onClick={() => setIsExpanded(!isExpanded)}
             >
                 {question}
@@ -34,7 +34,7 @@ const QuestionAndAnswerCard = ({question, answer} : {question: string, answer: s
                         transition: 'height 0.3s ease',
                     }}
                 >
-                    <div className="p-4 bg-blue-100 text-gray-800">{answer}</div> 
+                    <div className="p-4 text-gray-800 font-alike">{answer}</div> 
                 </div>
         </div>
     );

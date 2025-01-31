@@ -16,7 +16,8 @@ export default {
         alkalami: ['"Alkalami"', 'serif'],
         alatsi: ['"Alatsi"', 'serif'],
         abhaya: ['"Abhaya"', 'serif'],
-        "abhaya-bold": ['"Abhaya Bold"', 'serif']
+        "abhaya-bold": ['"Abhaya Bold"', 'serif'],
+        algreya: ['"Algreya"', 'serif']
       },
       colors:  {
         primary: {
