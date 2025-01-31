@@ -1,5 +1,6 @@
 import { PackageDomain } from "../model/configs/detail/PackagesDomain";
 import { TourPackageDomain } from "../model/configs/TourPackageDomain";
+import { FaqDomain } from "../model/faq/FaqDomain";
 import { PopularDestinationDomain } from "../model/homepage/PopularDestinationDomain";
 import RecommendedPackageDomain from "../model/homepage/RecommendedPackageDomain";
 import { SliderBannerDomain } from "../model/homepage/SliderBannerDomain";
@@ -17,4 +18,5 @@ export interface ConfigsProviderRepository {
     getPromoMiceCard(key: string) : Promise<MiceCardDomain | null>
     getMiceDetail(key: string) : Promise<MiceDetailDomain | null>
     getLainnyaPage(key: string) : Promise<LainnyaDomain | null>
+    getFaq() : Promise<FaqDomain[]>
 }

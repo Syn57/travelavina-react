@@ -9,6 +9,7 @@ import TourPackages from '../pages/tourpackage/TourPackages';
 import MicePage from '../pages/mice/MicePage';
 import MiceDetailPage from '../pages/micedetail/MiceDetailPage';
 import LainnyaPage from '../pages/lainnya/LainnyaPage';
+import FAQ from '../pages/faq/FAQ';
 
 const TravelavinaRouter = () => {
     return (
@@ -22,6 +23,7 @@ const TravelavinaRouter = () => {
                 <Route path="/mice" element={<MicePage />} />
                 <Route path="/mice/:type" element={<MiceDetailPage />} />
                 <Route path="/other/:type" element={<LainnyaPage />} />
+                <Route path="/other/faq" element={<FAQ />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />

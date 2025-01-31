@@ -9,6 +9,7 @@ import RecommendedPackageDomain from "../../domain/model/homepage/RecommendedPac
 import { MiceDetailDomain } from "../../domain/model/micedetail/MiceDetailDomain";
 import { 
     RC_KEY_DETAIL_PACKAGES,
+    RC_KEY_FAQ,
     RC_KEY_MICE,
     RC_KEY_POPULAR_DESTINATION, 
     RC_KEY_RECOMMENDED_PACKAGE, 
@@ -16,8 +17,19 @@ import {
     RC_KEY_TOUR_PACKAGES
 } from "../../utils/Constants";
 import { LainnyaDomain } from "../../domain/model/lainnya/LainnyaDomain";
+import { FaqDomain } from "../../domain/model/faq/FaqDomain";
 
 export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository {
+    async getFaq(): Promise<FaqDomain[]> {
+        try {
+            const jsonString = await fetchRemoteConfig(RC_KEY_FAQ);
+            console.log(jsonString);
+            const data: FaqDomain[] = JSON.parse(jsonString);
+            return data;
+        } catch (error) {
+            return [];
+        }
+    }
     async getLainnyaPage(key: string): Promise<LainnyaDomain | null> {
         try {
             const jsonString = await fetchRemoteConfig(key);
