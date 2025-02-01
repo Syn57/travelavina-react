@@ -16,6 +16,8 @@ const NavigationBar = ({ className = "" }) => {
     const [navigationChips, setNavigationChips] = useState<NavigationChipItemDomain[]>([]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isOverflowing, setIsOverflowing] = useState(false);
+    const [hoveredItem, setHoveredItem] = useState<string | null>(null); // State for hover
+
     const navRef = useRef() as MutableRefObject<HTMLDivElement>;
 
     useEffect(() => {
@@ -42,11 +44,9 @@ const NavigationBar = ({ className = "" }) => {
                 ref={navRef}
                 className={`${isHomePage ? "absolute z-20 backdrop-blur-lg" : "relative bg-gray-400"} w-full`}
             >
-                <div className={`
-                    ${isHomePage ? "bg-white/50 backdrop-blur-3xl" : "relative bg-gray-400"} 
-                    w-full flex items-center top-0 left-0 px-5 sm:px-10 lg:px-20`
-                }>
+                <div className={`${isHomePage ? "bg-white/50 backdrop-blur-3xl" : "relative bg-gray-400"} w-full flex items-center top-0 left-0 px-5 sm:px-10 lg:px-20 h-full`}>
                     <NavLogo className="mr-auto shrink-0" />
+
                     {/* Mobile Menu Toggle */}
                     {isOverflowing ? (
                         <div className="ml-auto">
@@ -58,9 +58,31 @@ const NavigationBar = ({ className = "" }) => {
                             </button>
                         </div>
                     ) : (
-                        <div className="flex space-x-4 items-center justify-center ml-auto">
+                        <div className="flex space-x-4 items-center justify-center ml-auto h-full">
                             {navigationChips.map((item) => (
-                                <NavItem key={item.route} title={item.title} route={item.route} />
+                                <div
+                                    key={item.route}
+                                    className="relative group h-full"
+                                    onMouseEnter={() => setHoveredItem(item.route)}
+                                    onMouseLeave={() => setHoveredItem(null)}
+                                >
+                                    <NavItem title={item.title} route={item.route} />
+                                    
+                                    {/* Dropdown menu */}
+                                    {item.data && hoveredItem === item.route && item.data.length !== 0 && (
+                                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+                                            {item.data.map((sub) => (
+                                                <a
+                                                    key={sub.route}
+                                                    href={sub.route}
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                                                >
+                                                    {sub.title}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
                             ))}
                             <div className="text-white text-sm">|</div>
                             <a
@@ -72,7 +94,6 @@ const NavigationBar = ({ className = "" }) => {
                         </div>
                     )}
                 </div>
-                
                 {/* Expanded Mobile Menu */}
                 {isOverflowing && isMenuOpen && (
                     <div className="bg-white/50 bg-gray-400 w-full flex flex-col items-center py-4">
@@ -85,6 +106,7 @@ const NavigationBar = ({ className = "" }) => {
         </nav>
     );
 };
+
 
 const getNavbarChips = async (
     onFinishFetchAction: (arg0: NavigationChipItemDomain[]) => void
