@@ -10,6 +10,10 @@ import MicePage from '../pages/mice/MicePage';
 import MiceDetailPage from '../pages/micedetail/MiceDetailPage';
 import LainnyaPage from '../pages/lainnya/LainnyaPage';
 import FAQ from '../pages/faq/FAQ';
+import Disclaimer from '../pages/tnc/Disclaimer';
+import PrivacyPolicy from '../pages/tnc/PrivacyPolicy';
+import TermsAndConditions from '../pages/tnc/TermOfUse';
+import TermsOfUse from '../pages/tnc/TermOfUse';
 
 const TravelavinaRouter = () => {
     return (
@@ -24,6 +28,9 @@ const TravelavinaRouter = () => {
                 <Route path="/mice/:type" element={<MiceDetailPage />} />
                 <Route path="/other/:type" element={<LainnyaPage />} />
                 <Route path="/other/faq" element={<FAQ />} />
+                <Route path="/disclaimer" element={<Disclaimer />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/term-of-use" element={<TermsOfUse />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <Footer />
