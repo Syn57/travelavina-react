@@ -45,7 +45,7 @@ const NavigationBar = ({ className = "" }) => {
                 className={`${isHomePage ? "absolute z-20 backdrop-blur-lg" : "relative bg-gray-400"} w-full`}
             >
                 <div className={`${isHomePage ? "bg-white/50 backdrop-blur-3xl" : "relative bg-gray-400"} w-full flex items-center top-0 left-0 px-5 sm:px-10 lg:px-20 h-full`}>
-                    <NavLogo className="mr-auto shrink-0" />
+                    <NavLogo className="mr-auto shrink-0 h-[65px]" />
 
                     {/* Mobile Menu Toggle */}
                     {isOverflowing ? (
@@ -58,24 +58,29 @@ const NavigationBar = ({ className = "" }) => {
                             </button>
                         </div>
                     ) : (
-                        <div className="flex space-x-4 items-center justify-center ml-auto h-full">
+                        <div className="flex justify-between place-content-evenly ml-auto h-[65px] items-center">
                             {navigationChips.map((item) => (
                                 <div
                                     key={item.route}
-                                    className="relative group h-full"
+                                    className="relative items-stretch"
                                     onMouseEnter={() => setHoveredItem(item.route)}
                                     onMouseLeave={() => setHoveredItem(null)}
                                 >
-                                    <NavItem title={item.title} route={item.route} />
+                                    <NavItem title={item.title} route={item.route} isHasChild={item.data.length !== 0} isChildHovered={hoveredItem === item.route}/>
                                     
                                     {/* Dropdown menu */}
                                     {item.data && hoveredItem === item.route && item.data.length !== 0 && (
-                                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2 z-50">
+                                        <div className="absolute left-0 w-48 bg-white shadow-lg rounded-lg z-50"
+                                            onMouseEnter={() => setHoveredItem(item.route)}
+                                            onMouseLeave={() => setHoveredItem(null)}
+                                        >
                                             {item.data.map((sub) => (
                                                 <a
                                                     key={sub.route}
                                                     href={sub.route}
-                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                                                    className="block px-4 py-2 text-black hover:text-primary rounded-lg"
+                                                    onMouseEnter={() => setHoveredItem(item.route)}
+                                                    onMouseLeave={() => setHoveredItem(null)}
                                                 >
                                                     {sub.title}
                                                 </a>
@@ -84,10 +89,10 @@ const NavigationBar = ({ className = "" }) => {
                                     )}
                                 </div>
                             ))}
-                            <div className="text-white text-sm">|</div>
+                            <div className="text-white text-sm px-4">|</div>
                             <a
                                 href={getWcmsValue(WHATSAPP_LINK)}
-                                className="text-white flex-shrink-0 items-center"
+                                className="text-white flex-shrink-0 items-center px-4"
                             >
                                 <img className="h-4 w-4" src={ic_phone} alt="Phone Icon" />
                             </a>
@@ -98,7 +103,7 @@ const NavigationBar = ({ className = "" }) => {
                 {isOverflowing && isMenuOpen && (
                     <div className="bg-white/50 bg-gray-400 w-full flex flex-col items-center py-4">
                         {navigationChips.map((item) => (
-                            <NavItem key={item.route} title={item.title} route={item.route} />
+                            <NavItem key={item.route} title={item.title} route={item.route} isHasChild={item.data.length !== 0} isChildHovered={hoveredItem === item.route}/>
                         ))}
                     </div>
                 )}
@@ -107,7 +112,6 @@ const NavigationBar = ({ className = "" }) => {
     );
 };
 
-
 const getNavbarChips = async (
     onFinishFetchAction: (arg0: NavigationChipItemDomain[]) => void
 ) => {
@@ -115,6 +119,5 @@ const getNavbarChips = async (
     const data = await repository.getNavigationbarAssets();
     onFinishFetchAction(data);
 };
-
 
 export default NavigationBar;

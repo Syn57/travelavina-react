@@ -21,17 +21,17 @@ const Footer: React.FC = () => {
                         <ul className="space-y-2">
                             <li><a href="/home" className="hover:underline font-alice">Home</a></li>
                             <li><a href="/about" className="hover:underline font-alice">About Us</a></li>
-                            <li><a href="/contact" className="hover:underline font-alice">Contact Us</a></li>
+                            <li><a href="https://wa.me/6287875128049" className="hover:underline font-alice">Contact Us</a></li>
                         </ul>
                     </div>
                     {/* Other Pages */}
                     <div>
                         <h3 className="text-2xl mb-4 font-alfaslab">Other Pages</h3>
                         <ul className="space-y-2">
-                            <li><a href="/privacy" className="hover:underline font-alice">Privacy & Policy</a></li>
-                            <li><a href="/terms" className="hover:underline font-alice">Terms Of Use</a></li>
+                            <li><a href="/privacy-policy" className="hover:underline font-alice">Privacy & Policy</a></li>
+                            <li><a href="/term-of-use" className="hover:underline font-alice">Terms Of Use</a></li>
                             <li><a href="/disclaimer" className="hover:underline font-alice">Disclaimer</a></li>
-                            <li><a href="/faq" className="hover:underline font-alice">FAQ</a></li>
+                            <li><a href="/other/faq" className="hover:underline font-alice">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
