@@ -7,14 +7,11 @@ import { TYPES } from "../../../../di/Types";
 
 const HomepageCard = () => {
     const [homeCards, setHomeCards] = useState<PopularDestinationDomain[]>([]);
+    
     useEffect(() =>{
         getPopularDestination(setHomeCards);
-        console.log("cuk"+homeCards);
     }, []);
-    homeCards.map((car) => {
-        console.log("card"+car.route);
-    });
-    console.log("cat"+homeCards[0]);
+
     if (homeCards.length != 5 && homeCards[0] == undefined) {
         return (
             <>

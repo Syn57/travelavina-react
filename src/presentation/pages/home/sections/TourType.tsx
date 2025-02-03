@@ -10,13 +10,11 @@ const TourType = () => {
     useEffect(() => {
         getTourTypes(setTourTypes);
     }, []);
+
     return (
         <div className="text-center">
             <h2 className="font-alice text-5xl mt-20 mb-16">Categories Tour Types</h2>
-            <div className="
-                md:flex md:flex-wrap md:justify-center md:gap-16 
-                grid grid-cols-2"
-            >
+            <div className="md:flex md:flex-wrap md:justify-center md:gap-16 grid grid-cols-2">
                 {tourTypes.map((tour, index) => (
                     <div key={index} className="flex flex-col items-center md:mt-0 mt-8 w-auto">
                         <img
