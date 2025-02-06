@@ -38,6 +38,8 @@ const MiceDetailPage = () => {
             </div>
         );
     }
+
+    if (miceDetail === null) return null; // TODO: Add error state
     
     return (
         <div className="relative">

@@ -34,7 +34,7 @@ const QuestionAndAnswerCard = ({question, answer} : {question: string, answer: s
                         transition: 'height 0.3s ease',
                     }}
                 >
-                    <div className="p-4 text-gray-800 font-alike">{answer}</div> 
+                    <div className="p-4 text-gray-800 font-alike whitespace-pre-line">{answer}</div> 
                 </div>
         </div>
     );

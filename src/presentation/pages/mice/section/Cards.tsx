@@ -13,15 +13,17 @@ const Cards = () => {
     }, []);
 
     return (
-        <div className="md:mx-80 mt-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                {miceCards.map((card, index) => (
-                    <MiceCardItem
-                        key={index}
-                        card={card} 
-                        className={""}                
-                    /> 
-                ))}
+        <div className="flex items-center justify-center">
+            <div className="max-w-5xl px-5 mt-8">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                    {miceCards.map((card, index) => (
+                        <MiceCardItem
+                            key={index}
+                            card={card} 
+                            className={""}                
+                        /> 
+                    ))}
+                </div>
             </div>
         </div>
     );

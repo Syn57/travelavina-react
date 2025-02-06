@@ -43,6 +43,7 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
     async getMiceDetail(key: string): Promise<MiceDetailDomain | null> {
         try {
             const jsonString = await fetchRemoteConfig(key);
+            console.log(jsonString);
             const data: MiceDetailDomain = JSON.parse(jsonString);
             return data;
         } catch (error) {
