@@ -1,6 +1,6 @@
 import NavigationBar from "../../sections/NavigationBar";
 import BannerSlider from "../../component/BannerSlider";
-import SpotlightDestination from "./sections/SpotlightDestination";
+import PopularDestination from "./sections/PopularDestination";
 import HomepageCard from "./sections/HomepageCard";
 import TourPackagesHomeSection from "./sections/TourPackagesHomeSection";
 import RecommendedPackage from "./sections/RecommendedPackage";
@@ -13,7 +13,7 @@ const HomePage = () => {
         <div className="relative items-center justify-start">
             <NavigationBar />
             <BannerSlider />
-            <SpotlightDestination />
+            <PopularDestination />
             <HomepageCard />
             <Testimoni />
             <TourPackagesHomeSection />

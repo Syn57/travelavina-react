@@ -1,4 +1,4 @@
-import bg_testi from "../../../../assets/images/slider-banner-2.jpg"
+import bg_testi from "https://trv3-public.travelavina.com/assets/Homepage/homepage-whatourclientsay-iconorang.jpg"
 import { TESTIMONI_DESC, TESTIMONI_NAME, TESTIMONI_SUBTITLE, TESTIMONI_TITLE } from "../../../../utils/WcmsConstants";
 import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
@@ -27,7 +27,9 @@ const Testimoni = ({ className = "" }) => {
                     {getWcmsValue(TESTIMONI_DESC)}
                 </p>
                 <div className="flex items-center justify-center mt-10 mb-8">
-                    <img src={bg_testi} className="h-[50px] w-[50px] rounded-full" />
+                    <img 
+                        src={"https://trv3-public.travelavina.com/assets/Homepage/homepage-whatourclientsay-iconorang.jpg"} 
+                        className="h-[50px] w-[50px] rounded-full" />
                     <p className="text-white font-archivo ml-4">
                         Best Regards<br />
                         {getWcmsValue(TESTIMONI_NAME)}
@@ -36,7 +38,7 @@ const Testimoni = ({ className = "" }) => {
             </div>
 
             <img
-                src={bg_testi}
+                src={"https://trv3-public.travelavina.com/assets/Homepage/homepage-whatourclientsay-banner.jpg"}
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
                 alt="Background"
             />

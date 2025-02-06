@@ -41,7 +41,7 @@ export class AssetProviderRepositoryImpl implements AssetProviderRepository {
             const jsonString = await fetchRemoteConfig(RC_KEY_SOCIAL_MEDIA_HEADER)
             const data: HeaderIconDomain[] = JSON.parse(jsonString);
             return data.map(header => ({
-                iconPath: getAbsolutePathAsset(PREFIX_PATH_ICONS_HEADER, header.iconPath),
+                iconPath: header.iconPath,
                 url: header.url
             }));
         } catch (error) {

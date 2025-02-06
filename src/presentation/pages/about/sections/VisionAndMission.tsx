@@ -1,15 +1,15 @@
 import React from 'react';
-import img from "../../../../assets/images/slider-banner-1.jpg"
+import { PAGE_WIDTH_CONFIG } from '../../../../utils/Constants';
 
 const VisionMission: React.FC = () => {
   return (
     <div className="relative bg-cover bg-center h-auto ">
-      <div className="bg-black/20 py-16 px-4 md:px-20 z-10 relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className={`bg-black/20 py-16 z-10 relative flex items-center justify-center`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 ${PAGE_WIDTH_CONFIG}`}>
           {/* Vision Section */}
           <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4 font-alike">Our Vision</h2>
-            <p className="text-sm md:text-base leading-relaxed font-alice">
+            <h2 className="text-3xl font-bold mb-4 font-alike">Our Vision</h2>
+            <p className="text-sm md:text-lg leading-relaxed font-abhaya">
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman
               liburan yang aman, terjangkau, dan penuh inspirasi bagi semua pelanggan kami.
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman liburan
@@ -18,8 +18,8 @@ const VisionMission: React.FC = () => {
           </div>
           {/* Mission Section */}
           <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-4 font-alike">Our Mission</h2>
-            <ol className="list-decimal pl-4 text-sm md:text-base leading-relaxed font-alice">
+            <h2 className="text-3xl font-bold mb-4 font-alike">Our Mission</h2>
+            <ol className="list-decimal pl-4 text-sm md:text-lg leading-relaxed font-abhaya">
               <li>
                 Menyediakan layanan pariwisata yang aman, nyaman, dan mudah diakses oleh
                 semua kalangan.
@@ -36,7 +36,7 @@ const VisionMission: React.FC = () => {
           </div>
         </div>
       </div>
-      <img src={img}
+      <img src={`https://trv3-public.travelavina.com/assets/about-us/aboutus-banner-visimisi.jpg`}
         className="absolute top-0 left-0 w-full h-full object-cover  z-0"
         alt="Background"
       />

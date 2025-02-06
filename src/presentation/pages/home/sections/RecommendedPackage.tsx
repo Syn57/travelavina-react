@@ -10,8 +10,9 @@ const RecommendedPackage = () => {
     useEffect(() =>{
         getRecommendedPackage(setRecommendedPackages);
     }, []);
+    if (recommendedPackages.length === 0) return null;
     return (
-        <div className="px-80 mt-[40px]">
+        <div className={`mt-[40px] flex flex-col items-center justify-center`}>
             {recommendedPackages.map((packageRecommendationItem, index) => (
                 <RecommendedPackageItem key={index} packageItem={packageRecommendationItem} className="flex w-full mb-4" />
             ))}

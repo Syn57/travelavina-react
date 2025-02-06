@@ -31,11 +31,13 @@ const NavigationBar = ({ className = "" }) => {
         };
     }, []);
 
+    if(navigationChips.length === 0) return null;
+
     return (
         <nav className={`${className} w-full`}>
             <div
                 ref={navRef}
-                className={`${isHomePage ? "absolute z-20 backdrop-blur-lg" : "relative bg-gray-400"} w-full`}
+                className={`${isHomePage ? "absolute z-20 backdrop-blur-sm" : "relative bg-gray-400"} w-full flex items-center justify-center`}
             >
                 <NavBarContent
                     isOverflowing={isOverflowing}

@@ -2,6 +2,7 @@ import ic_timer from "../../assets/icons/ic_tour_duration.svg"
 import ic_min_people from "../../assets/icons/ic_people_min.svg"
 import { Rating } from "@mui/material";
 import { Link } from "react-router";
+import { PAGE_WIDTH_CONFIG } from "../../utils/Constants";
 
 interface IRecommendationPackageProps {
     title: string;
@@ -15,9 +16,9 @@ interface IRecommendationPackageProps {
 
 const RecommendedPackageItem = ({ className, packageItem }: { className: string, packageItem: IRecommendationPackageProps }) => {
     return (
-        <div className={`flex rounded-3xl overflow-hidden ${className} bg-[#161E41] items-center`}>
+        <div className={`flex rounded-3xl overflow-hidden ${className} bg-[#161E41] items-center ${PAGE_WIDTH_CONFIG}`}>
             <img
-                className="flex-[2] h-64 object-cover rounded-3xl"
+                className="flex-[2] h-64 object-cover rounded-3xl w-full"
                 src={packageItem.image}
                 alt={packageItem.title}
             />

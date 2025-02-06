@@ -3,7 +3,7 @@ export interface NavigationChipItemDomain {
     route: string
     data: NavigationBarDataItem[]
 }
-interface NavigationBarDataItem {
+export interface NavigationBarDataItem {
     title: string,
     route: string
 }

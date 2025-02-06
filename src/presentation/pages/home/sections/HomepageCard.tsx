@@ -4,6 +4,7 @@ import { PopularDestinationDomain } from "../../../../domain/model/homepage/Popu
 import container from "../../../../di/Modules";
 import { ConfigsProviderRepository } from "../../../../domain/repositories/ConfigsProviderRepository";
 import { TYPES } from "../../../../di/Types";
+import { PAGE_WIDTH_CONFIG } from "../../../../utils/Constants";
 
 const HomepageCard = () => {
     const [homeCards, setHomeCards] = useState<PopularDestinationDomain[]>([]);
@@ -19,8 +20,8 @@ const HomepageCard = () => {
         );
     };
     return (
-        <>
-            <div className="grid grid-cols-2 gap-5 px-80 mt-[40px]">
+        <div className={`flex flex-col items-center justify-center`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-5 mt-[40px] ${PAGE_WIDTH_CONFIG} self-center`}>
                 {/* First Row: Two Items */}
                 <HomePageCardItem 
                     card={homeCards[0]}
@@ -33,7 +34,7 @@ const HomepageCard = () => {
                     
             </div>
             {/* Second Row: Three Items */}
-            <div className="grid grid-cols-3 gap-5 px-80 col-span-2 mt-8">
+            <div className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 col-span-2 mt-8 ${PAGE_WIDTH_CONFIG} self-center`}>
                 <HomePageCardItem 
                     card={homeCards[2]}
                     className=""
@@ -47,7 +48,7 @@ const HomepageCard = () => {
                     className=""
                 />
             </div>
-        </>
+        </div>
     );
 };
 

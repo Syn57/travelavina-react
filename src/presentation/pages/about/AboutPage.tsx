@@ -11,7 +11,7 @@ const AboutPage = () => {
     return (
         <div className="relative">
             <NavigationBar />
-            <ImageBannerStatic title="About" img="src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="ABOUT US" img="https://trv3-public.travelavina.com/assets/about-us/aboutus-banner-aboutus.jpg" className=""/>
             <WhoWeAre />
             <Features />
             <VisionAndMission />

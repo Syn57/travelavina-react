@@ -3,6 +3,7 @@ import ic_booking from "../../../../assets/icons/ic_book.svg"
 import ic_affordable from "../../../../assets/icons/ic_affordable.svg"
 import ic_globe from "../../../../assets/icons/ic_lot_choice.svg"
 import ic_per_service from "../../../../assets/icons/ic_service.svg"
+import { PAGE_WIDTH_CONFIG } from '../../../../utils/Constants';
 
 const Features: React.FC = () => {
   const features = [
@@ -33,15 +34,17 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <div className="bg-white px-6 md:px-80 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-        {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <img src={feature.icon} className='w-[72px] h-[72px] mb-4'/>
-            <h3 className="text-xl font-bold mb-2 font-alike">{feature.title}</h3>
-            <p className="text-gray-600 font-alice text-justify">{feature.description}</p>
-          </div>
-        ))}
+    <div className={`flex items-center justify-center`}>
+      <div className={`bg-white py-12 ${PAGE_WIDTH_CONFIG} `}>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center self-center">
+          {features.map((feature, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <img src={feature.icon} className='w-[72px] h-[72px] mb-4'/>
+              <h3 className="text-xl font-bold mb-2 font-alike">{feature.title}</h3>
+              <p className="text-gray-600 font-alice text-justify">{feature.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

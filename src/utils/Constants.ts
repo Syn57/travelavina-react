@@ -18,3 +18,7 @@ export const RC_KEY_DETAIL_PACKAGES = "detailPackages"
 export const RC_KEY_MICE = "miceCards"
 export const RC_KEY_PROMO_MICE_MAIN_PAGE = "promoMiceMainPageCard"
 export const RC_KEY_FAQ = "faq"
+
+// View helper
+export const NAVBAR_HEIGHT = "h-[65px]";
+export const PAGE_WIDTH_CONFIG = "w-full max-w-7xl mx-5";

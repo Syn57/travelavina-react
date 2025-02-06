@@ -1,20 +1,23 @@
-import ic_email from "../../assets/icons/ic_email.svg"
 import container from "../../di/Modules"
 import { AssetProviderRepository } from "../../domain/repositories/AssetProvideRepository"
 import { TYPES } from "../../di/Types"
 import { useEffect, useState } from "react"
 import { HeaderIconDomain } from "../../domain/model/assets/HeaderIconDomain"
+import { PAGE_WIDTH_CONFIG } from "../../utils/Constants"
 
 const Header = ({ className = "" }) => {
   const [headerIcons, setHeaderIcons] = useState<HeaderIconDomain[]>([])
   useEffect(() => {
     getHeaderIcons(setHeaderIcons)
   }, [])
+  if (headerIcons.length == 0) return null;
   return (
-    <div className={`${className} bg-primary py-2 flex px-4 w-full space-x-4 justify-end`}>
-        {headerIcons.map((header) => (
-            <IconHeader icon={header.iconPath} url={header.url} />
+    <div className={`${className} bg-primary w-full flex items-center justify-center`}>
+      <div className={`${PAGE_WIDTH_CONFIG} flex py-2 space-x-4 justify-end`}>
+      {headerIcons.map((header, index) => (
+            <IconHeader icon={header.iconPath} url={header.url} key={index} />
         ))}
+      </div>
     </div>
   );
 };
