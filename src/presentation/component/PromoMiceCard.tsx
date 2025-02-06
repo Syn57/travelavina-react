@@ -4,12 +4,12 @@ import { useNavigate } from "react-router";
 import { ConfigsProviderRepository } from "../../domain/repositories/ConfigsProviderRepository";
 import { TYPES } from "../../di/Types";
 import { useEffect, useState } from "react";
+import { PAGE_WIDTH_CONFIG } from "../../utils/Constants";
 
 const PromoMiceCard = ({ className="" , rc_key} : {className: string, rc_key:string}) => {
-    const navigate = useNavigate();
     const [promoCard, setPromoCard] = useState<MiceCardDomain | null>(null);
     const handleClick = () => {
-        navigate(promoCard.route);
+        window.open(promoCard.route, "_blank");
     };
     useEffect(() => {
         getPromoMiceCard(setPromoCard, rc_key);
@@ -22,7 +22,8 @@ const PromoMiceCard = ({ className="" , rc_key} : {className: string, rc_key:str
     };
 
     return (
-        <div className={`relative h-64 overflow-hidden mx-4 md:mx-16 mt-10 rounded-3xl`}>
+        <div className="flex items-center justify-center">
+            <div className={`relative h-64 overflow-hidden ${PAGE_WIDTH_CONFIG} mt-10 rounded-3xl`}>
             <img src={promoCard.image} className="w-full h-full object-cover" alt={promoCard.title} />  
             <div className="absolute inset-0 bg-primary bg-opacity-70 w-full">
                 <div className={`absolute bottom-0 flex w-full h-full items-center`}>
@@ -39,9 +40,9 @@ const PromoMiceCard = ({ className="" , rc_key} : {className: string, rc_key:str
                     </div>
                 </div>
             </div>
-            
         </div>
 
+        </div>
     );
 };
 

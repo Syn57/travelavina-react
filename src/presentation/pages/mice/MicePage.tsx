@@ -8,9 +8,9 @@ const MicePage = () => {
     return (
         <div className="relative">
             <NavigationBar />
-            <ImageBannerStatic title="MICE" img="src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="MICE" img={`https://trv3-public.travelavina.com/assets/mice/mice-header.jpg`} className=""/>
             <Cards />
-            <PromoMiceCard className="px-10 md:px-80" rc_key={`${RC_KEY_PROMO_MICE_MAIN_PAGE}`} />
+            <PromoMiceCard className="" rc_key={`${RC_KEY_PROMO_MICE_MAIN_PAGE}`} />
         </div>
     );
 }
