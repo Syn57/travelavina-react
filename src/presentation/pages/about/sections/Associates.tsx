@@ -19,7 +19,7 @@ const Associates = () => {
                 <img
                   src={associate.image}
                   alt={associate.name}
-                  className="max-w-full h-auto object-contain"
+                  className="max-w-full h-24 object-contain place-self-center"
                 />
             ))}
           </div>
