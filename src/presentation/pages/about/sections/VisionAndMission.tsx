@@ -7,7 +7,7 @@ const VisionMission: React.FC = () => {
       <div className={`bg-black/20 py-16 z-10 relative flex items-center justify-center`}>
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-8 ${PAGE_WIDTH_CONFIG}`}>
           {/* Vision Section */}
-          <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md">
+          <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md backdrop-blur-sm">
             <h2 className="text-3xl font-bold mb-4 font-alike">Our Vision</h2>
             <p className="text-sm md:text-lg leading-relaxed font-abhaya">
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman
@@ -17,7 +17,7 @@ const VisionMission: React.FC = () => {
             </p>
           </div>
           {/* Mission Section */}
-          <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md">
+          <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md backdrop-blur-sm">
             <h2 className="text-3xl font-bold mb-4 font-alike">Our Mission</h2>
             <ol className="list-decimal pl-4 text-sm md:text-lg leading-relaxed font-abhaya">
               <li>

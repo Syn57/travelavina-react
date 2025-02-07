@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import  ic_plus  from "../../../../assets/icons/ic_plus.svg"
-import  ic_minus  from "../../../../assets/icons/ic_minus.svg"
 import { FaqDomain } from "../../../../domain/model/faq/FaqDomain";
 import container from "../../../../di/Modules";
 import { ConfigsProviderRepository } from "../../../../domain/repositories/ConfigsProviderRepository";
 import { TYPES } from "../../../../di/Types";
 import QuestionAndAnswerCard from "./QuestionAnswerCard";
+import { PAGE_WIDTH_CONFIG } from "../../../../utils/Constants";
 
 
 export default function QuestionAndAnswer() {
@@ -14,10 +13,12 @@ export default function QuestionAndAnswer() {
         getFaq(setFaq);
     }, []);
     return (
-        <div className="md:px-36 mx-auto mt-10">
-            {faqs.map((faq) => (
-                <QuestionAndAnswerCard answer={faq.answer} question={faq.question}/>
-            ))}
+        <div className="flex items-center justify-center">
+            <div className={`${PAGE_WIDTH_CONFIG} mt-10`}>
+                {faqs.map((faq) => (
+                    <QuestionAndAnswerCard answer={faq.answer} question={faq.question}/>
+                ))}
+            </div>
         </div>
     );
 };
