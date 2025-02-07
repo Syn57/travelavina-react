@@ -1,5 +1,4 @@
 import React from 'react';
-import image from "../../../../assets/images/slider-banner-3.jpg"
 import { PAGE_WIDTH_CONFIG } from '../../../../utils/Constants';
 const TripService: React.FC = () => {
   const services = [
@@ -30,25 +29,24 @@ const TripService: React.FC = () => {
   ];
 
   return (
-    <div className='flex items-center justify-center'>
-      <div className={`container mx-auto py-10 ${PAGE_WIDTH_CONFIG}`}>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className={`py-10 flex items-center justify-center w-full`}>
+        <div className={`flex items-stretch justify-center w-full gap-6 lg:flex-row flex-col ${PAGE_WIDTH_CONFIG}`}>
           {/* Image Section */}
-          <div className="col-span-1 w-full h-full">
+          <div className="w-full lg:w-1/3 flex">
             <img
               src={`https://trv3-public.travelavina.com/assets/about-us/aboutus-banner-ourtripservice.jpg`}
               alt="Trip Service"
-              className="rounded-lg shadow-md w-full h-full object-cover"
+              className="rounded-lg shadow-lg w-full object-cover h-full"
             />
           </div>
 
           {/* Text Section */}
-          <div className="col-span-2">
-            <h2 className="text-3xl font-alfaslab mb-2">Our Trip Service</h2>
+          <div className="w-full h-full lg:w-2/3">
+            <h2 className="text-3xl font-alfaslab mb-2 lg:mt-0 mt-4">Our Trip Service</h2>
             <p className="text-black mb-6 font-alice font-bold">
               Memberikan berbagai pilihan pelayanan yang dibutuhkan selama kegiatan wisata berlangsung dengan ketersediaan pelayanan yang lengkap dan profesional.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <div
                   key={index}
@@ -69,7 +67,6 @@ const TripService: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

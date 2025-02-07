@@ -36,7 +36,7 @@ const Features: React.FC = () => {
   return (
     <div className={`flex items-center justify-center`}>
       <div className={`bg-white py-12 ${PAGE_WIDTH_CONFIG} `}>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center self-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center self-center">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center">
               <img src={feature.icon} className='w-[72px] h-[72px] mb-4'/>

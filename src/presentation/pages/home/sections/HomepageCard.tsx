@@ -21,7 +21,7 @@ const HomepageCard = () => {
     };
     return (
         <div className={`flex flex-col items-center justify-center`}>
-            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-5 mt-[40px] ${PAGE_WIDTH_CONFIG} self-center`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-2 gap-5 mt-[40px] ${PAGE_WIDTH_CONFIG} self-center px-5 xl:px-0`}>
                 {/* First Row: Two Items */}
                 <HomePageCardItem 
                     card={homeCards[0]}
@@ -34,7 +34,7 @@ const HomepageCard = () => {
                     
             </div>
             {/* Second Row: Three Items */}
-            <div className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 col-span-2 mt-8 ${PAGE_WIDTH_CONFIG} self-center`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 col-span-2 mt-8 ${PAGE_WIDTH_CONFIG} self-center px-5 xl:px-0`}>
                 <HomePageCardItem 
                     card={homeCards[2]}
                     className=""
