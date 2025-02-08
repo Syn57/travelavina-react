@@ -15,19 +15,19 @@ const HolidayBenefit = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
                 <div className="text-left">
                     <h3 className="font-alice text-2xl lg:text-3xl mb-4">{getWcmsValue(HOLIDAY_COLUMN_1_TITLE)}</h3>
-                    <p className="font-alice text-md lg:text-lg text-justify">{getWcmsValue(HOLIDAY_COLUMN_1_DESC)}</p>
+                    <p className="font-alice text-md lg:text-lg text-justify lg:ms-6 ms-5">{getWcmsValue(HOLIDAY_COLUMN_1_DESC)}</p>
                 </div>
                 <div className="text-left">
                     <h3 className="font-alice text-2xl lg:text-3xl mb-4">{getWcmsValue(HOLIDAY_COLUMN_2_TITLE)}</h3>
-                    <p className="font-alice text-md lg:text-lg text-justify">{getWcmsValue(HOLIDAY_COLUMN_2_DESC)}</p>
+                    <p className="font-alice text-md lg:text-lg text-justify lg:ms-6 ms-5">{getWcmsValue(HOLIDAY_COLUMN_2_DESC)}</p>
                 </div>
                 <div className="text-left">
                     <h3 className="font-alice text-2xl lg:text-3xl mb-4">{getWcmsValue(HOLIDAY_COLUMN_3_TITLE)}</h3>
-                    <p className="font-alice text-md lg:text-lg text-justify">{getWcmsValue(HOLIDAY_COLUMN_3_DESC)}</p>
+                    <p className="font-alice text-md lg:text-lg text-justify lg:ms-6 ms-5">{getWcmsValue(HOLIDAY_COLUMN_3_DESC)}</p>
                 </div>
                 <div className="text-left">
                     <h3 className="font-alice text-2xl lg:text-3xl mb-4">{getWcmsValue(HOLIDAY_COLUMN_4_TITLE)}</h3>
-                    <p className="font-alice text-md lg:text-lg text-justify">{getWcmsValue(HOLIDAY_COLUMN_4_DESC)}</p>
+                    <p className="font-alice text-md lg:text-lg text-justify lg:ms-6 ms-5">{getWcmsValue(HOLIDAY_COLUMN_4_DESC)}</p>
                 </div>
             </div>
         </div>

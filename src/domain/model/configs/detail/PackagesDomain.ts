@@ -4,6 +4,7 @@ import { SchedulePackageItemDomain } from "./SchedulePackageItemDomain";
 export interface PackageDomain {
     id: string,
     title: string,
+    bannerImage: string,
     imageUrl: string,
     packageType: string,
     rating: number,

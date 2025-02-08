@@ -10,6 +10,7 @@ import ImageAndTitle from "./sections/ImageAndTitle";
 import OverviewAndIncludeExclude from "./sections/OverviewAndIncludeExclude";
 import Itinerary from "./sections/Itinerary";
 import Documentation from "./sections/Documentation";
+import { PAGE_WIDTH_CONFIG } from "../../../utils/Constants";
 
 const DetailPage = () => {
     const { id } = useParams<{ id: string }>();
@@ -41,14 +42,16 @@ const DetailPage = () => {
     return (
         <div className="relative">
             <NavigationBar />
-            <ImageBannerStatic title={`${packageItem?.packageType}`} img="/src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title={`${packageItem?.packageType}`} img={packageItem.bannerImage} className=""/>
             { packageItem ? 
-                <>
-                    <ImageAndTitle packageItem={packageItem} />
-                    <OverviewAndIncludeExclude packageItem={packageItem} />
-                    <Itinerary packageItem={packageItem} />
-                    <Documentation packageItem={packageItem}/>
-                </>
+                <div className="flex items-center justify-center"> 
+                    <div className={`${PAGE_WIDTH_CONFIG}`}>
+                        <ImageAndTitle packageItem={packageItem} />
+                        <OverviewAndIncludeExclude packageItem={packageItem} />
+                        <Itinerary packageItem={packageItem} />
+                        <Documentation packageItem={packageItem}/>
+                    </div>
+                </div>
                 : null}
         </div>
     );

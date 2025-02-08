@@ -23,7 +23,6 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
     async getFaq(): Promise<FaqDomain[]> {
         try {
             const jsonString = await fetchRemoteConfig(RC_KEY_FAQ);
-            console.log(jsonString);
             const data: FaqDomain[] = JSON.parse(jsonString);
             return data;
         } catch (error) {
@@ -43,7 +42,6 @@ export class ConfigsProviderRepositoryImpl implements ConfigsProviderRepository 
     async getMiceDetail(key: string): Promise<MiceDetailDomain | null> {
         try {
             const jsonString = await fetchRemoteConfig(key);
-            console.log(jsonString);
             const data: MiceDetailDomain = JSON.parse(jsonString);
             return data;
         } catch (error) {

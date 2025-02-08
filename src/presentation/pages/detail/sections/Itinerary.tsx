@@ -45,7 +45,7 @@ const ItineraryCard = ({ sched }: { sched: SchedulePackageItemDomain }) => {
             >
                 <div className="space-y-3 px-6 py-4 ">
                     {sched.desc.map((desc, index) => (
-                        <li key={index} className="text-bold font-alice">{desc}</li>
+                        <li key={index} className="text-bold font-alice whitespace-pre-line">{desc}</li>
                     ))}
                 </div>
             </CardContent>
@@ -56,7 +56,7 @@ const ItineraryCard = ({ sched }: { sched: SchedulePackageItemDomain }) => {
   
 const Itinerary = ({packageItem} : {packageItem : PackageDomain}) => {
     return (
-        <div className="mx-auto px-96 mt-10">
+        <div className="mt-10 mx-5">
             <Divider />
             <div className="flex items-center gap-3 mb-6">
                 <img className="h-8 w-8 text-white"src={ic_itinerary} />

@@ -9,7 +9,6 @@ const GalleryTrip = () => {
     const [galleryTrips, setGalleryTrips] = useState<GalleryTripDomain[]>([])
     useEffect(() => {
         getGalleryTrip(setGalleryTrips);
-        console.log(galleryTrips);
     }, []);
     return (
       <div className="flex items-center justify-center">

@@ -7,7 +7,7 @@ import ic_location from "../../../../assets/icons/ic_location.svg"
 
 const ImageAndTitle = ({packageItem} : {packageItem : PackageDomain}) => {
     return (
-        <div className="mx-auto px-96 mt-10">
+        <div className="mt-10 mx-5">
           {/* Image Section */}
           <div className="relative">
             <img
@@ -19,7 +19,7 @@ const ImageAndTitle = ({packageItem} : {packageItem : PackageDomain}) => {
           {/* Content Section */}
           <div className="mt-4">
             <h3 className="text-4xl mb-1 font-alice">{`${packageItem.title}`}</h3>
-            <div className="flex w-full  justify-between">
+            <div className="flex w-full justify-between flex-col md:flex-row">
                 <div>
                     <div className="flex items-center mb-2">
                         <span className="text-xl font-semibold mr-2 font-alike">{packageItem.rating.toFixed(1)}</span>
@@ -34,7 +34,7 @@ const ImageAndTitle = ({packageItem} : {packageItem : PackageDomain}) => {
                 </div>
                 
                 <a href={packageItem.bookUrl}
-                    className=" bg-secondary hover:bg-orange-600 rounded-lg text-white font-medium flex items-center text-xl font-alice w-1/4 justify-center h-[60px]"
+                    className=" bg-secondary hover:bg-orange-600 rounded-lg text-white font-medium flex items-center text-xl font-alice w-1/2 md:w-1/4 justify-center h-[60px] mt-4 md:mt-0"
                 >
                     {getWcmsValue(BOOKING_NOW_TEXT)}
                     <img src={ic_arrow_right} className="h-4 w-4 ml-3 mt-1"></img>

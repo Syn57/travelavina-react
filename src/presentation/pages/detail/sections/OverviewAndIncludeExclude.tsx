@@ -7,7 +7,7 @@ import Divider from "../../../component/Divider";
 
 const OverviewAndIncludeExclude = ({packageItem} : {packageItem : PackageDomain}) => {
     return (
-        <div className="mx-auto px-96 mt-10">
+        <div className="mt-10 mx-5">
             {/* Overview Section */}
             <Divider />
             <div className="mb-8">
@@ -19,7 +19,7 @@ const OverviewAndIncludeExclude = ({packageItem} : {packageItem : PackageDomain}
                     />
                     Overview
                 </h4>
-                <p className="text-lg leading-relaxed font-alice text-justify mt-2">{packageItem.overview}</p>
+                <p className="text-lg leading-relaxed font-alice text-justify mt-2 whitespace-pre-line">{packageItem.overview}</p>
             </div>
 
             {/* Include & Exclude Section */}
