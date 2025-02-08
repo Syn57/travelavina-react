@@ -42,7 +42,7 @@ const RecommendedPackageItem = ({ className, packageItem }: { className: string,
                     <span className="text-3xl uppercase font-alike">Start</span>
                     <h3 className="text-5xl font-alfaslab mt-3">{packageItem.price}</h3>
                     <Rating name="half-rating-read" defaultValue={packageItem.rating} precision={0.1} readOnly className="mt-4"/>
-                    <Link to="/tour-packages">
+                    <Link to="/package">
                         <button className="mt-4 bg-[#40AFD7] text-white py-2 px-4 rounded-xl hover:bg-[#3b9cc0] font-alike">
                             View Details
                         </button>

@@ -1,4 +1,7 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter 
+    as 
+    Router, Route, Routes 
+} from 'react-router-dom'
 import Header from '../sections/Header';
 import HomePage from '../pages/home/HomePage';
 import AboutPage from '../pages/about/AboutPage';
@@ -12,12 +15,11 @@ import LainnyaPage from '../pages/lainnya/LainnyaPage';
 import FAQ from '../pages/faq/FAQ';
 import Disclaimer from '../pages/tnc/Disclaimer';
 import PrivacyPolicy from '../pages/tnc/PrivacyPolicy';
-import TermsAndConditions from '../pages/tnc/TermOfUse';
 import TermsOfUse from '../pages/tnc/TermOfUse';
 
 const TravelavinaRouter = () => {
     return (
-        <Router>
+        <Router >
             <Header className='z-20'/>  
             <Routes>
                 <Route path="/" element={<HomePage />} />
