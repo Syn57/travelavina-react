@@ -5,7 +5,7 @@ export default function TermsOfUse() {
     return (
         <>
             <NavigationBar />
-            <ImageBannerStatic title="Term Of Use" img="/src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="Term Of Use" img="https://trv3-public.travelavina.com/assets/term-of-use/term-of-use-banner.jpg" className=""/>
             <div className="max-w-5xl mx-auto p-6 font-algreya text-xl mt-4">
                 <h1 className="text-2xl font-bold text-center mb-6 font-algreya">SYARAT DAN KETENTUAN PENGGUNAAN</h1>
                 <div className="space-y-4 text-gray-800">

@@ -5,7 +5,7 @@ export default function PrivacyPolicy() {
     return (
         <>
             <NavigationBar />
-            <ImageBannerStatic title="Privacy Policy" img="/src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="Privacy Policy" img="https://trv3-public.travelavina.com/assets/privacy-and-policy/privacy-and-policy-banner.jpg" className=""/>
             <div className="max-w-5xl mx-auto p-6 font-algreya text-xl mt-4">
                 <h1 className="text-2xl font-bold text-center mb-6">KEBIJAKAN PRIVASI</h1>
                 <div className="space-y-4 text-gray-800">

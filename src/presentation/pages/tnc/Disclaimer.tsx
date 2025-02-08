@@ -5,7 +5,7 @@ export default function Disclaimer() {
     return (
         <>
             <NavigationBar />
-            <ImageBannerStatic title="Disclaimer" img="/src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="Disclaimer" img="https://trv3-public.travelavina.com/assets/disclaimer/disclaimer-banner.jpg" className=""/>
             <div className="max-w-5xl mx-auto p-6 font-algreya text-xl mt-4">
                 <h2 className="text-2xl font-bold text-center mb-4">DISCLAIMER</h2>
                 <div className="space-y-4">
