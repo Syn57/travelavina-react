@@ -3,7 +3,7 @@ import { getWcmsValue } from "../../../../utils/WcmsHelper";
 
 const HolidayBenefit = () => {
     return (
-        <div className="text-center px-4 md:px-20 lg:px-40 2xl:px-[500px]">
+        <div className="text-center px-4 md:px-20 lg:px-40 2xl:px-[480px]">
             <h2 className="font-alice text-5xl mb-20 mt-20">
                 {getWcmsValue(HOLIDAY_TITLE).split("<br/>").map((line, index) => (
                     <span key={index}>
