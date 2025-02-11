@@ -6,7 +6,7 @@ const TourPackages = () => {
     return (
         <div className='relative'>
             <NavigationBar />
-            <ImageBannerStatic title="Paket Wisata" img="src/assets/images/slider-banner-3.jpg" className=""/>
+            <ImageBannerStatic title="Paket Wisata" img="https://trv3-public.travelavina.com/assets/paket-wisata/paket-wisata-header.jpg" className=""/>
             <TourPackagesContent />
         </div>
     );

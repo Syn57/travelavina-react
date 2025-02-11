@@ -1,4 +1,9 @@
 export interface SchedulePackageItemDomain {
     title: string,
-    desc: string[]
+    data: SchedulePackageContentDomain[]
+}
+
+interface SchedulePackageContentDomain {
+    title: string,
+    desc: string
 }

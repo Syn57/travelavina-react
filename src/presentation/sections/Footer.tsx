@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                     <div>
                         <h3 className="text-2xl mb-4 font-alfaslab">Quick Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="/home" className="hover:underline font-alice">Home</a></li>
+                            <li><a href="/" className="hover:underline font-alice">Home</a></li>
                             <li><a href="/about" className="hover:underline font-alice">About Us</a></li>
                             <li><a href="https://wa.me/6287875128049" className="hover:underline font-alice">Contact Us</a></li>
                         </ul>

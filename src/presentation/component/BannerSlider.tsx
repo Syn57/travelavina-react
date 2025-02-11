@@ -33,7 +33,6 @@ const BannerSlider = () => {
                 autoplay={{
                     delay: 3000
                 }}
-                pagination={{clickable:true}}
                 loop={true} >
                     {banners.map((banner, index) =>(
                         <SwiperSlide  key={index}>

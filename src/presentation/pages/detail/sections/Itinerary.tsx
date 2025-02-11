@@ -44,8 +44,11 @@ const ItineraryCard = ({ sched }: { sched: SchedulePackageItemDomain }) => {
                 className="overflow-hidden"
             >
                 <div className="space-y-3 px-6 py-4 ">
-                    {sched.desc.map((desc, index) => (
-                        <li key={index} className="text-bold font-alice whitespace-pre-line">{desc}</li>
+                    {sched.data.map((data, index) => (
+                        <>
+                            <li key={index} className="text-bold font-alice font-bold">{data.title}</li>
+                            <p key={index} className="text-bold font-alice ms-5">{data.desc}</p>
+                        </>
                     ))}
                 </div>
             </CardContent>

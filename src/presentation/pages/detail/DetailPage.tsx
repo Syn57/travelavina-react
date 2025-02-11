@@ -15,7 +15,6 @@ import { PAGE_WIDTH_CONFIG } from "../../../utils/Constants";
 const DetailPage = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
-    const [loading, setLoading] = useState(true);
     const [packageItem, setPackage] = useState<PackageDomain | null>(null);
     useEffect(() => {
         const checkState = async() => {
@@ -24,21 +23,13 @@ const DetailPage = () => {
                 if (!pack) {
                     navigate("/not-found");
                 } else {
-                    setLoading(false);
+                    
                 }
             }
         }
         checkState()
-    }, [packageItem, navigate]);
-
-    if (loading) {
-        return (
-            <div className="relative">
-                <NavigationBar />
-                <div className="loading-spinner">Loading...</div>
-            </div>
-        );
-    }
+    }, [packageItem]);
+    if (packageItem === null) return null;
     return (
         <div className="relative">
             <NavigationBar />
