@@ -12,7 +12,7 @@ export default function Disclaimer() {
                 <section>
                     <h3 className="font-semibold">1. Informasi Umum</h3>
                     <p className="ms-5">
-                    Selamat datang di [Nama Website] Informasi yang disajikan di situs ini disediakan hanya untuk tujuan informasi umum...
+                    Selamat datang di travelavina.com Informasi yang disajikan di situs ini disediakan hanya untuk tujuan informasi umum...
                     </p>
                 </section>
                 
