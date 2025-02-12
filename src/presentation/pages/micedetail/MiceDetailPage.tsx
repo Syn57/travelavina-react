@@ -30,7 +30,7 @@ const MiceDetailPage = () => {
         }
         checkState()
     }, [miceDetail, navigate]);
-    if (miceDetail === null) return null; // TODO: Add error state
+    if (miceDetail === null) return null;
     
     return (
         <div className="relative">

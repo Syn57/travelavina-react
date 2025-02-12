@@ -30,7 +30,7 @@ const LainnyaPage = () => {
         }
         checkState()
     }, [lainnya, navigate]);
-    
+    if (lainnya === null) return null;
     return (
         <div>
             <NavigationBar />
