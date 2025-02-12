@@ -5,9 +5,9 @@ export function gridColumnValueConverter(column: number): string {
         case column === 3:
           return "xl:grid-cols-3";
         case column === 4:
-          return "xl:grid-cols-3";
-        case column === 5:
           return "xl:grid-cols-4";
+        case column === 5:
+          return "xl:grid-cols-5";
         case column === 6:
           return "xl:grid-cols-6";
         case column === 7:

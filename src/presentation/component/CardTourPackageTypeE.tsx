@@ -12,7 +12,7 @@ const CardTourPackageTypeE = ({
     return (
         <div className={`relative ${gridHeightValueConverter(layoutConfigs.height)}`}>
             <div className="absolute inset-0 bg-primary bg-opacity-60 z-10 flex items-center justify-center">
-                <p className="text-white text-2xl font-alkalami">{card.title}</p>
+                <p className="text-white text-2xl font-alkalami text-center">{card.title}</p>
             </div>
             <img
                 src={card.image}

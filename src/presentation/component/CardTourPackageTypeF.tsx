@@ -13,7 +13,7 @@ const CardTourPackageTypeF = ({
         <div className={`relative ${gridHeightValueConverter(layoutConfigs.height)}`}>
             {/* Overlay */}
             <div className="absolute inset-0 bg-primary bg-opacity-60 flex flex-col z-10 justify-center items-center">
-                <p className="text-white text-4xl font-alkalami">{card.title}</p>
+                <p className="text-white text-4xl font-alkalami text-center">{card.title}</p>
                 <a href={`${card.route}`} className="mt-4 px-8 py-2 bg-white bg-opacity-70 rounded-md text-black font-alice text-sm hover:bg-opacity-90 transition">
                     Chat Me
                 </a>
