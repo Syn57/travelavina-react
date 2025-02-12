@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router";
 import { CardTourPackageItemDomain } from "../../domain/model/configs/CardTourPackageItemDomain";
 import { gridHeightValueConverter } from "../../utils/StringHelper";
 import { CardLayoutProps } from "../model/CardLayoutProps";
@@ -9,9 +10,13 @@ const CardTourPackageTypeE = ({
     layoutConfigs: CardLayoutProps;
     card: CardTourPackageItemDomain;
 }) => {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate(card.route);
+    };
     return (
         <div className={`relative ${gridHeightValueConverter(layoutConfigs.height)}`}>
-            <div className="absolute inset-0 bg-primary bg-opacity-60 z-10 flex items-center justify-center">
+            <div className="absolute inset-0 bg-primary bg-opacity-60 z-10 flex items-center justify-center" onClick={handleClick}>
                 <p className="text-white text-2xl font-alkalami text-center">{card.title}</p>
             </div>
             <img
