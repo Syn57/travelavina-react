@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import TitleDesc from "../../sections/TitleDesc";
 import MiceDetailCardItem from "../../component/MiceDetailCardItem";
 import PromoMiceCard from "../../component/PromoMiceCard";
+import { PAGE_WIDTH_CONFIG } from "../../../utils/Constants";
 
 const MiceDetailPage = () => {
     const { type } = useParams<{ type: string }>();
@@ -29,16 +30,6 @@ const MiceDetailPage = () => {
         }
         checkState()
     }, [miceDetail, navigate]);
-
-    if (loading) {
-        return (
-            <div className="relative">
-                <NavigationBar />
-                <div className="loading-spinner">Loading...</div>
-            </div>
-        );
-    }
-
     if (miceDetail === null) return null; // TODO: Add error state
     
     return (
@@ -46,13 +37,15 @@ const MiceDetailPage = () => {
             <NavigationBar />
             <ImageBannerStatic title={type.toUpperCase()} img={miceDetail.image} className=""/>
             { miceDetail ?
-                <>
-                    <TitleDesc title={miceDetail.title} desc={miceDetail.subtitle} />
-                    {miceDetail.cards.map((card, index) => (
-                        <MiceDetailCardItem key={index} card={card}/>
-                    ))}
-                    <PromoMiceCard rc_key={miceDetail.promoRCKey} className={""} />
-                </>
+                <div className="flex items-center justify-center">
+                    <div className={`${PAGE_WIDTH_CONFIG}`}>
+                        <TitleDesc title={miceDetail.title} desc={miceDetail.subtitle} />
+                            {miceDetail.cards.map((card, index) => (
+                                <MiceDetailCardItem key={index} card={card}/>
+                            ))}
+                        <PromoMiceCard rc_key={miceDetail.promoRCKey} className={""} />
+                    </div>
+                </div>
                 : null
             }
         </div>

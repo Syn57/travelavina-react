@@ -30,15 +30,6 @@ const LainnyaPage = () => {
         }
         checkState()
     }, [lainnya, navigate]);
-
-    if (loading) {
-        return (
-            <div className="relative">
-                <NavigationBar />
-                <div className="loading-spinner">Loading...</div>
-            </div>
-        );
-    }
     
     return (
         <div>

@@ -4,16 +4,16 @@ import { firebaseApp } from "./FirebaseInitializer";
 const remoteConfig = getRemoteConfig(firebaseApp);
 
 // Use for production
-remoteConfig.settings = {
-  minimumFetchIntervalMillis: 3600000,
-  fetchTimeoutMillis: 10000,
-};
-
-// Use for development
 // remoteConfig.settings = {
-//   minimumFetchIntervalMillis: 10000,
+//   minimumFetchIntervalMillis: 3600000,
 //   fetchTimeoutMillis: 10000,
 // };
+
+// Use for development
+remoteConfig.settings = {
+  minimumFetchIntervalMillis: 10000,
+  fetchTimeoutMillis: 10000,
+};
 
 export const fetchRemoteConfig = async (key) => {
     try {
