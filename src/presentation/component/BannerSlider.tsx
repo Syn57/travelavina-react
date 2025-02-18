@@ -16,7 +16,6 @@ import { SliderBannerDomain } from "../../domain/model/homepage/SliderBannerDoma
 import container from "../../di/Modules";
 import { ConfigsProviderRepository } from "../../domain/repositories/ConfigsProviderRepository";
 import { TYPES } from "../../di/Types";
-import { PAGE_WIDTH_CONFIG } from '../../utils/Constants';
 
 const BannerSlider = () => {
     const [banners, setBanners] = useState<SliderBannerDomain[]>([]);
@@ -24,7 +23,7 @@ const BannerSlider = () => {
         getSliderBanner(setBanners);
     }, []);
     return (   
-        <div className="relative swiper-frame w-full overflow-hidden flex h-[600px] sm:h-[800px] align-middle justify-center">
+        <div className="relative swiper-frame w-full overflow-hidden flex h-[800px] sm:h-[800px] align-middle justify-center">
             <Swiper
                 modules={[Navigation, Pagination]}
                 className="swiper-container w-full h-full"
@@ -33,7 +32,8 @@ const BannerSlider = () => {
                 autoplay={{
                     delay: 3000
                 }}
-                loop={true} >
+                loop={true} 
+                >
                     {banners.map((banner, index) =>(
                         <SwiperSlide  key={index}>
                             <BannerSilderItem banner={banner}/>
@@ -49,7 +49,7 @@ const BannerSlider = () => {
 
 const BottomNavbar = () => {
     return (
-        <div className="absolute bottom-0 w-full flex bg-primary/80 z-20 justify-center items-center space-x-24 h-[100px]">
+        <div className="absolute bottom-0 w-full flex bg-primary/80 z-20 justify-center items-center md:space-x-24 py-5 lg:flex-row flex-col md:space-y-0 space-y-4">
             <div className="flex space-x-4 justify-center items-center">
                 <img src={ic_customer} className="h-8 w-8"></img>
                 <p className="text-white font-medium text-2xl font-abhaya">{getWcmsValue(TOTAL_CUSTOMER_TEXT)}</p>
@@ -74,7 +74,7 @@ const SliderButton = ({className = "", isRight = false}) => {
     const swiper = useSwiper();
     return (
         <button onClick={() => {isRight? swiper.slideNext() : swiper.slidePrev()}}>
-            <img className={`h-[32px] w-[32px] top-[300px] sm:top-[400px] absolute z-30 ${className}`} src={isRight? ic_right : ic_left}></img>
+            <img className={`h-[32px] w-[32px] top-[400px] sm:top-[400px] absolute z-30 ${className}`} src={isRight? ic_right : ic_left}></img>
         </button>
     );
 };

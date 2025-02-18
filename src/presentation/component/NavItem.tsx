@@ -8,12 +8,14 @@ const NavItem = ({
     title, 
     route, 
     isHasChild, 
-    isChildHovered 
+    isChildHovered,
+    onClick 
 }: { 
   title: string, 
   route: string, 
   isHasChild: boolean, 
-  isChildHovered: boolean
+  isChildHovered: boolean,
+  onClick: () => void 
 }) => {
 
   const location = useLocation();
@@ -21,7 +23,7 @@ const NavItem = ({
   const isActive = location.pathname === route;
 
   return (
-    <div className={`relative group flex ${NAVBAR_HEIGHT}`}>
+    <div className={`relative group flex ${NAVBAR_HEIGHT}`} onClick={onClick}>
       <Link
         className={`realtive text-md ${isActive || isChildHovered ? "text-primary" : "text-white"} group-hover:text-primary transition-colors duration-700 font-bold flex items-center px-4`}
         to={route}

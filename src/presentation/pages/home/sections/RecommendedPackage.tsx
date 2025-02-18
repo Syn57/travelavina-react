@@ -12,7 +12,7 @@ const RecommendedPackage = () => {
     }, []);
     if (recommendedPackages.length === 0) return null;
     return (
-        <div className={`mt-[40px] flex flex-col items-center justify-center`}>
+        <div className={`mt-[40px] flex flex-col items-center justify-center w-full px-5`}>
             {recommendedPackages.map((packageRecommendationItem, index) => (
                 <RecommendedPackageItem key={index} packageItem={packageRecommendationItem} className="flex w-full mb-4" />
             ))}
