@@ -42,7 +42,7 @@ const TripService: React.FC = () => {
 
           {/* Text Section */}
           <div className="w-full h-full lg:w-2/3">
-            <h2 className="text-3xl font-alfaslab mb-2 lg:mt-0 mt-4">Our Trip Service</h2>
+            <h2 className="text-3xl font-alfaslab mb-2 lg:mt-0 mt-4">Our trip ervice</h2>
             <p className="text-black mb-6 font-alice font-bold">
               Memberikan berbagai pilihan pelayanan yang dibutuhkan selama kegiatan wisata berlangsung dengan ketersediaan pelayanan yang lengkap dan profesional.
             </p>
@@ -60,7 +60,7 @@ const TripService: React.FC = () => {
                     </div>
                   </div>
                   <h3 className="font-semibold text-2xl mb-2 font-alice">{service.title}</h3>
-                  <p className="text-black text-sm font-alice">{service.description}</p>
+                  <p className="text-black text-sm font-alice text-justify">{service.description}</p>
                 </div>
               ))}
             </div>

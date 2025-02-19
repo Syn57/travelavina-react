@@ -25,7 +25,7 @@ const MiceDetailCardItem = ({ card } : { card: MiceDetailCardItemDomain}) => {
               </div>
       
               {/* Description Section */}
-              <p className="text-gray-600 mb-6 font-inria">{card.desc}</p>
+              <p className="text-gray-600 mb-6 font-inria text-justify">{card.desc}</p>
       
               {/* Button Section */}
               <ButtonArrowRight route={card.route} title={card.btnText} className="w-1/2"/>

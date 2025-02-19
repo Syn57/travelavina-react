@@ -12,7 +12,7 @@ const MiceCardItem = ({ card, className="" } : {card: MiceCardDomain, className:
                 src={card.image}
                 className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-primary bg-opacity-50"></div>
+            <div className="absolute inset-0 bg-primary bg-opacity-35"></div>
             <div className="absolute bottom-0 p-6">
                 <h2 className="text-white text-3xl font-alfaslab">{card.title}</h2>
                 <p className="text-gray-300 mt-2 h-16 font-alice text-lg">{card.subtitle}</p>

@@ -9,7 +9,7 @@ const VisionMission: React.FC = () => {
           {/* Vision Section */}
           <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md backdrop-blur-sm">
             <h2 className="text-3xl font-bold mb-4 font-alike">Our Vision</h2>
-            <p className="text-sm md:text-lg leading-relaxed font-abhaya">
+            <p className="text-sm md:text-lg leading-relaxed font-abhaya text-justify">
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman
               liburan yang aman, terjangkau, dan penuh inspirasi bagi semua pelanggan kami.
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman liburan
@@ -19,7 +19,7 @@ const VisionMission: React.FC = () => {
           {/* Mission Section */}
           <div className="bg-blue-900/75 text-white p-6 rounded-lg shadow-md backdrop-blur-sm">
             <h2 className="text-3xl font-bold mb-4 font-alike">Our Mission</h2>
-            <ol className="list-decimal pl-4 text-sm md:text-lg leading-relaxed font-abhaya">
+            <ol className="list-decimal pl-4 text-sm md:text-lg leading-relaxed font-abhaya text-justify">
               <li>
                 Menyediakan layanan pariwisata yang aman, nyaman, dan mudah diakses oleh
                 semua kalangan.
