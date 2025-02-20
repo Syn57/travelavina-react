@@ -29,7 +29,6 @@ const NavigationBar = ({ className = "" }) => {
 
 
     useEffect(() => {
-        console.log("called")
         getNavbarChips(setNavigationChips);
         const checkOverflow = () => {
             if (navRef.current) {
