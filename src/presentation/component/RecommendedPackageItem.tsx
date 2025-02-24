@@ -35,7 +35,7 @@ const RecommendedPackageItem = ({ className, packageItem }: { className: string,
                             <p className="text-sm sm:text-base text-white ml-4 font-alike font-extralight">{packageItem.minimum_person}</p>
                         </div>
                     </div>
-                    <p className="mt-4 font-inria sm:text-justify text-sm sm:text-base lg:pr-5">{packageItem.desc}</p>
+                    <p className="mt-4 font-inria sm:text-justify text-sm sm:text-base lg:pr-5 text-justify">{packageItem.desc}</p>
                 </div>
                 <div className="flex-[1] text-white flex">
                     <div className="w-[2px] h-[200px] bg-white justify-self-start self-center"/>

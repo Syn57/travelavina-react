@@ -11,19 +11,41 @@ import CardTourPackageTypeD from "../../../component/CardTourPackageTypeD";
 import CardTourPackageTypeE from "../../../component/CardTourPackageTypeE";
 import CardTourPackageTypeF from "../../../component/CardTourPackageTypeF";
 import { PAGE_WIDTH_CONFIG } from "../../../../utils/Constants";
+import { useRef } from "react";
 
-const TourPackagesContent = () => {
+const TourPackagesContent = ({target=""}) => {
     const [tourPackages, setTourPackages] = useState<TourPackageDomain[]>([]);
+    const tourSectionsRef = useRef<{ [key: string]: HTMLElement | null }>({});
+    
 
     useEffect(() => {
         getTourPackages(setTourPackages);
+        console.log("scrolling to", target);
     }, []);
-    
+
+    useEffect(() => {
+        if (tourPackages.length > 0) {
+            console.log("Trying to scroll to:", target, tourSectionsRef.current[target]);
+
+            // Delay scroll to allow DOM updates
+            setTimeout(() => {
+                if (target && tourSectionsRef.current[target]) {
+                    console.log("Scrolling to:", target);
+                    tourSectionsRef.current[target]?.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100); // Small delay to allow React to update refs
+        }
+    }, [tourPackages]); // ✅ Runs only after tourPackages updates
+
     return (
         <div className="flex items-center justify-center">
             <div className={`${PAGE_WIDTH_CONFIG}`}>
                 {tourPackages.map((tourPackage) => (
-                    <div className="w-full mt-10">
+                    <div 
+                        key={tourPackage.title} 
+                        ref={(el) => (tourSectionsRef.current[tourPackage.title] = el)}
+                        className="w-full mt-10"
+                    >
                         <h2 className="font-alice text-4xl mb-6">{tourPackage.title}</h2>
                         <div className={`grid ${gridColumnValueConverter(tourPackage.column)} ${gridGapValueConverter(tourPackage.gap)} md:grid-cols-2 grid-cols-1 gap-3`}>
                             {tourPackage.cards.map((card) => {
@@ -45,11 +67,10 @@ const TourPackagesContent = () => {
                 ))}
             </div>
         </div>
-        
     );
 };
 
-const getTourPackages= async (
+const getTourPackages = async (
     onFinishFetchAction: (arg0: TourPackageDomain[]) => void
 ) => {
     const repository = container.get<ConfigsProviderRepository>(TYPES.ConfigsProviderRepository);

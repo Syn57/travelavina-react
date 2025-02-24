@@ -42,7 +42,7 @@ const TripService: React.FC = () => {
 
           {/* Text Section */}
           <div className="w-full h-full lg:w-2/3">
-            <h2 className="text-3xl font-alfaslab mb-2 lg:mt-0 mt-4">Our trip ervice</h2>
+            <h2 className="text-3xl font-alfaslab mb-2 lg:mt-0 mt-4">Our trip service</h2>
             <p className="text-black mb-6 font-alice font-bold">
               Memberikan berbagai pilihan pelayanan yang dibutuhkan selama kegiatan wisata berlangsung dengan ketersediaan pelayanan yang lengkap dan profesional.
             </p>

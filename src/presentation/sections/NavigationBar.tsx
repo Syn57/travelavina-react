@@ -75,7 +75,7 @@ const NavigationBar = ({ className = "" }) => {
                 {/* Scrollable Navigation */}
                 <nav className="px-4 overflow-y-auto max-h-[calc(100vh-60px)] mt-5">
                     {navigationChips.map((item) => (
-                        <div key={item.route} 
+                        <div key={item.title} 
                             className="mb-1"
                         >
                             <NavDrawerItem 
@@ -96,7 +96,7 @@ const NavigationBar = ({ className = "" }) => {
                                     {item.data.map(subItem => (
                                         <NavDrawerItem 
                                             isParent={false}
-                                            key={subItem.route} 
+                                            key={subItem.title} 
                                             title={subItem.title} 
                                             route={subItem.route} 
                                             isHovered={activeRouteDrawer === subItem.title} 
@@ -152,7 +152,7 @@ const NavDrawerItem = ({
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(route)
+    navigate(route, { state: { targetPackage: title } })
   };
 
   return (

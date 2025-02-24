@@ -15,7 +15,7 @@ const HomePageCardItem = ({ className = "", card}: {className: string, card: IHo
         <div className={`justify-center items-center h-full ${className}`}>
             <img src={card.image} className="rounded-3xl h-[250px] sm:h-[350px] w-full"></img>
             <div className="flex pt-5">
-                <div className="font-alata font-bold text-xl w-1/2">
+                <div className="font-alata font-bold text-md md:text-xl w-1/2">
                     {card.destinationTitle}
                     <div className="flex font-alice font-bold text-lg items-center">
                         {card.rating.toFixed(1)}

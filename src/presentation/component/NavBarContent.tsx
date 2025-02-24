@@ -43,7 +43,7 @@ const NavBarContent = (
                     <div className={`flex justify-between ml-auto ${NAVBAR_HEIGHT} items-center`}>
                         {navigationChips.map((item) => (
                             <div
-                                key={item.route}
+                                key={item.title}
                                 className="relative items-stretch"
                                 onMouseEnter={() => setHoveredItem(item.route)}
                                 onMouseLeave={() => setHoveredItem(null)}
@@ -61,7 +61,8 @@ const NavBarContent = (
                                     <NavBarDropdown 
                                         route={item.route} 
                                         childNav={item.data} 
-                                        setHoveredItem={setHoveredItem} />
+                                        setHoveredItem={setHoveredItem}
+                                        title={item.title} />
                                 )}
                             </div>
                         ))}

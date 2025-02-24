@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import ic_dropdown_white from '../../assets/icons/ic_chevron_dropdown_white.svg';
 import ic_dropdown_blue from '../../assets/icons/ic_chevron_dropdown_blue.svg';
 import { useState } from 'react';
@@ -21,14 +21,16 @@ const NavItem = ({
   const location = useLocation();
   const [isHovered, setIsHovered] = useState(false);
   const isActive = location.pathname === route;
+  const navigate = useNavigate();
 
   return (
     <div className={`relative group flex ${NAVBAR_HEIGHT}`} onClick={onClick}>
-      <Link
+      <a
         className={`realtive text-md ${isActive || isChildHovered ? "text-primary" : "text-white"} group-hover:text-primary transition-colors duration-700 font-bold flex items-center px-4`}
-        to={route}
+        // to={route}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
+        onClick={() => navigate(route, { state: { targetPackage: title } })}
       >
         <p className="text-center">{title}</p>
         { isHasChild && (
@@ -43,7 +45,7 @@ const NavItem = ({
             />
           </div>
         )}
-      </Link>
+      </a>
     </div>
   );
 };
