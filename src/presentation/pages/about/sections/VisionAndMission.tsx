@@ -12,8 +12,6 @@ const VisionMission: React.FC = () => {
             <p className="text-sm md:text-lg leading-relaxed font-abhaya text-justify">
               Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman
               liburan yang aman, terjangkau, dan penuh inspirasi bagi semua pelanggan kami.
-              Menjadi perusahaan pariwisata terdepan yang menyediakan pengalaman liburan
-              yang aman, terjangkau, dan penuh inspirasi bagi semua pelanggan kami.
             </p>
           </div>
           {/* Mission Section */}
