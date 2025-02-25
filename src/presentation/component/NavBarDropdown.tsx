@@ -25,7 +25,7 @@ const NavBarDropdown = ({
                     className="block px-4 py-2 text-black hover:text-primary rounded-lg"
                     onMouseEnter={() => setHoveredItem(route)}
                     onMouseLeave={() => setHoveredItem(null)}
-                    onClick={() => navigate(route, { state: { targetPackage: sub.title } })}
+                    onClick={() => navigate(sub.route, { state: { targetPackage: sub.title } })}
                 >
                     {sub.title}
                 </a>

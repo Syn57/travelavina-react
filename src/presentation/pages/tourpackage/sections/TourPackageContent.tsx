@@ -44,9 +44,9 @@ const TourPackagesContent = ({target=""}) => {
                     <div 
                         key={tourPackage.title} 
                         ref={(el) => (tourSectionsRef.current[tourPackage.title] = el)}
-                        className="w-full mt-10"
+                        className="w-full mt-4"
                     >
-                        <h2 className="font-alice text-4xl mb-6">{tourPackage.title}</h2>
+                        <h2 className="font-alice text-4xl pt-6 mb-6">{tourPackage.title}</h2>
                         <div className={`grid ${gridColumnValueConverter(tourPackage.column)} ${gridGapValueConverter(tourPackage.gap)} md:grid-cols-2 grid-cols-1 gap-3`}>
                             {tourPackage.cards.map((card) => {
                                 if (tourPackage.cardType === "A") {

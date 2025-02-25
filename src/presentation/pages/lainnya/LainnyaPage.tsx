@@ -14,17 +14,14 @@ import { PAGE_WIDTH_CONFIG } from "../../../utils/Constants";
 const LainnyaPage = () => {
     const { type } = useParams<{ type: string }>();
     const navigate = useNavigate();
-    const [loading, setLoading] = useState(true);
     const [lainnya, setLainnya] = useState<LainnyaDomain | null>(null);
 
     useEffect(() => {
         const checkState = async() => {
             if (type) {
                 const detail = await getlainnyaPage(type, setLainnya);
-                if (detail == null) {
-                    navigate("/not-found");
-                } else {
-                    setLoading(false);
+                if (!detail) {
+                    navigate(`/${type}`);
                 }
             }
         }

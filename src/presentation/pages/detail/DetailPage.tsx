@@ -21,9 +21,7 @@ const DetailPage = () => {
             if (id) {
                 const pack = await getPackageItem(id, setPackage);
                 if (!pack) {
-                    navigate("/not-found");
-                } else {
-                    
+                    navigate(`/${id}`);
                 }
             }
         }
