@@ -33,7 +33,7 @@ const OverviewAndIncludeExclude = ({packageItem} : {packageItem : PackageDomain}
                     />
                     Include & Exclude
                 </h4>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {/* Include List */}
                     <div className="mt-2">
                         <ul className="list-none space-y-2">

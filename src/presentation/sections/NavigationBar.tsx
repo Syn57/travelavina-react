@@ -14,7 +14,7 @@ import NavLogo from "../component/NavLogo";
 const NavigationBar = ({ className = "" }) => {
     const [navigationChips, setNavigationChips] = useState<NavigationChipItemDomain[]>([]);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isOverflowing, setIsOverflowing] = useState(false);
+    const [isOverflowing, setIsOverflowing] = useState(true);
     const [hoveredItem, setHoveredItem] = useState<string | null>(null);
     const navRef = useRef() as MutableRefObject<HTMLDivElement>;
     const location = useLocation();
