@@ -12,7 +12,7 @@ const Header = ({ className = "" }) => {
   }, [])
   if (headerIcons.length == 0) return null;
   return (
-    <div className={`${className} bg-primary w-full flex items-center justify-center`}>
+    <div className={`${className} bg-primary w-full flex items-center justify-center `}>
       <div className={`${PAGE_WIDTH_CONFIG} flex py-2 space-x-4 justify-end`}>
       {headerIcons.map((header, index) => (
             <IconHeader icon={header.iconPath} url={header.url} key={index} />

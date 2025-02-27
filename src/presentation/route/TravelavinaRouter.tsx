@@ -20,24 +20,24 @@ import TermsOfUse from '../pages/tnc/TermOfUse';
 const TravelavinaRouter = () => {
     return (
         <div className="flex flex-col min-h-screen">
-            <div className='flex-1 flex-grow'>
-            <Router>
-                <Header className='z-20'/>  
-                <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/package" element={<TourPackages />} />
-                    <Route path="/package/:id" element={<DetailPage />} />
-                    <Route path="/mice" element={<MicePage />} />
-                    <Route path="/mice/:type" element={<MiceDetailPage />} />
-                    <Route path="/other/:type" element={<LainnyaPage />} />
-                    <Route path="/other/faq" element={<FAQ />} />
-                    <Route path="/disclaimer" element={<Disclaimer />} />
-                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-                    <Route path="/term-of-use" element={<TermsOfUse />} />
-                    <Route path="*" element={<NotFoundPage />} />
-                </Routes>
-            </Router>
+            <div className='flex-1 flex flex-col h-full'>
+                <Router>
+                    <Header className='z-20'/>  
+                    <Routes>
+                        <Route path="/" element={<HomePage />} />
+                        <Route path="/about" element={<AboutPage />} />
+                        <Route path="/package" element={<TourPackages />} />
+                        <Route path="/package/:id" element={<DetailPage />} />
+                        <Route path="/mice" element={<MicePage />} />
+                        <Route path="/mice/:type" element={<MiceDetailPage />} />
+                        <Route path="/other/:type" element={<LainnyaPage />} />
+                        <Route path="/other/faq" element={<FAQ />} />
+                        <Route path="/disclaimer" element={<Disclaimer />} />
+                        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                        <Route path="/term-of-use" element={<TermsOfUse />} />
+                        <Route path="*" element={<NotFoundPage />} />
+                    </Routes>
+                </Router>
             </div>
             <Footer />
         </div>
