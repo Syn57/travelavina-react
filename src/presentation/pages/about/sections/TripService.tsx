@@ -12,19 +12,19 @@ const TripService: React.FC = () => {
     },
     {
       title: "Transportasi",
-      description: "Menawarkan pengalaman explore destinasi-destinasi wisata yang populer dan hidden gem dengan berbagai fasilitas.",
+      description: "Memudahkan mobilitas pariwisata dengan transportasi yang lengkap dan mengutamakan keselamatan wisatawan.",
     },
     {
       title: "Tiket Wisata",
-      description: "Menawarkan pengalaman explore destinasi-destinasi wisata yang populer dan hidden gem dengan berbagai fasilitas.",
+      description: "Membantu pembelian tiket wisata di berbagai destinasi dengan harga yang jauh lebih mudah dan terjangkau.",
     },
     {
       title: "Venue",
-      description: "Menawarkan pengalaman explore destinasi-destinasi wisata yang populer dan hidden gem dengan berbagai fasilitas.",
+      description: "Memberikan rekomendasi venue yang beragam sesuasi dengan kebutahan acara dan dengan harga yang negotiable.",
     },
     {
       title: "Trip Konsultan",
-      description: "Menawarkan pengalaman explore destinasi-destinasi wisata yang populer dan hidden gem dengan berbagai fasilitas.",
+      description: "Menjadi solusi bagi wisatawan yang ingin solo traveling atau berwisata mandiri dengan rekomendasi perjalanan yang lengkap.",
     },
   ];
 
